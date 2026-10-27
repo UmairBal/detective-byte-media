@@ -12,7 +12,7 @@ permissions:
 jobs:
   kaggle:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 355
     env:
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
@@ -48,7 +48,7 @@ jobs:
           kaggle kernels push -p kdir 2>&1 | tee -a klog.txt; test ${PIPESTATUS[0]} -eq 0
       - name: Wait for Kaggle
         run: |
-          for i in $(seq 1 220); do
+          for i in $(seq 1 340); do
             s=$(kaggle kernels status "${KAGGLE_USERNAME}/seekho-sitara-images" 2>&1 || true)
             echo "$(date +%T) $s" | tee -a klog.txt
             case "$s" in
