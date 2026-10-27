@@ -16,7 +16,9 @@ jobs:
     env:
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-      KAGGLE_KEY: ${{ secrets.KAGGLE_API_TOKEN }}
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
       - name: Install Kaggle CLI
@@ -41,12 +43,14 @@ jobs:
             "kernel_sources": []
           }
           META
-          kaggle kernels push -p kdir
+          echo "user set: ${KAGGLE_USERNAME:+yes} token set: ${KAGGLE_API_TOKEN:+yes}" | tee -a klog.txt
+          kaggle --version 2>&1 | tee -a klog.txt
+          kaggle kernels push -p kdir 2>&1 | tee -a klog.txt; test ${PIPESTATUS[0]} -eq 0
       - name: Wait for Kaggle
         run: |
           for i in $(seq 1 220); do
             s=$(kaggle kernels status "${KAGGLE_USERNAME}/seekho-sitara-images" 2>&1 || true)
-            echo "$(date +%T) $s"
+            echo "$(date +%T) $s" | tee -a klog.txt
             case "$s" in
               *COMPLETE*|*complete*) exit 0 ;;
               *ERROR*|*error*|*CANCEL*|*cancel*) exit 1 ;;
@@ -68,7 +72,8 @@ jobs:
           cp kout/out/*.jpg seekho/images_xl/ 2>/dev/null || cp kout/*.jpg seekho/images_xl/ 2>/dev/null || true
           git config user.name "seekho-bot"
           git config user.email "seekho-bot@users.noreply.github.com"
-          git add seekho/images_xl
+          cp klog.txt seekho/kaggle/last_run_log.txt 2>/dev/null || true
+          git add seekho/images_xl seekho/kaggle/last_run_log.txt
           git commit -m "Add Seekho Sitara SDXL story images" || echo "nothing to commit"
           git pull --rebase origin main
           git push
