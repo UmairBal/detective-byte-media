@@ -1,0 +1,74 @@
+name: seekho-kaggle
+
+on:
+  push:
+    paths:
+      - "seekho/kaggle/seekho_images.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  kaggle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Kaggle CLI
+        run: pip install --quiet "kaggle>=1.8.0"
+      - name: Push kernel to Kaggle (GPU)
+        run: |
+          mkdir -p kdir
+          cp seekho/kaggle/seekho_images.py kdir/
+          cat > kdir/kernel-metadata.json <<META
+          {
+            "id": "${KAGGLE_USERNAME}/seekho-sitara-images",
+            "title": "seekho-sitara-images",
+            "code_file": "seekho_images.py",
+            "language": "python",
+            "kernel_type": "script",
+            "is_private": true,
+            "enable_gpu": true,
+            "enable_internet": true,
+            "machine_shape": "NvidiaTeslaT4",
+            "dataset_sources": [],
+            "competition_sources": [],
+            "kernel_sources": []
+          }
+          META
+          kaggle kernels push -p kdir
+      - name: Wait for Kaggle
+        run: |
+          for i in $(seq 1 220); do
+            s=$(kaggle kernels status "${KAGGLE_USERNAME}/seekho-sitara-images" 2>&1 || true)
+            echo "$(date +%T) $s"
+            case "$s" in
+              *COMPLETE*|*complete*) exit 0 ;;
+              *ERROR*|*error*|*CANCEL*|*cancel*) exit 1 ;;
+            esac
+            sleep 60
+          done
+          exit 1
+      - name: Download output
+        if: always()
+        run: |
+          mkdir -p kout
+          kaggle kernels output "${KAGGLE_USERNAME}/seekho-sitara-images" -p kout || true
+          ls -R kout | head -50
+          tail -40 kout/*.log 2>/dev/null || true
+      - name: Commit images
+        if: always()
+        run: |
+          mkdir -p seekho/images_xl
+          cp kout/out/*.jpg seekho/images_xl/ 2>/dev/null || cp kout/*.jpg seekho/images_xl/ 2>/dev/null || true
+          git config user.name "seekho-bot"
+          git config user.email "seekho-bot@users.noreply.github.com"
+          git add seekho/images_xl
+          git commit -m "Add Seekho Sitara SDXL story images" || echo "nothing to commit"
+          git pull --rebase origin main
+          git push
