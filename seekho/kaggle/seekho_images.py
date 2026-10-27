@@ -42,3 +42,4 @@ for name, prompt in P:
         img.save(f"/kaggle/working/out/{name}_v{k}.jpg", quality=93)
     print(name, f"{time.time()-t0:.1f}s", flush=True)
 print("ALL_DONE", mode)
+# run 1793133219
