@@ -16,3 +16,4 @@ for it in P:
         img.save(f"/kaggle/working/out/{it['id']}_{kind}.jpg", quality=92)
         print(it["id"], kind, f"{time.time()-t0:.1f}s", flush=True)
 print("ALL_DONE")
+# retry
