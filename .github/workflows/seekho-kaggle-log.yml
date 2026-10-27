@@ -1,0 +1,26 @@
+name: seekho-kaggle-log
+on:
+  push:
+    paths:
+      - "seekho/kaggle/fetch_log.txt"
+permissions:
+  contents: write
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          pip install --quiet "kaggle>=1.8.0"
+          mkdir -p kout
+          kaggle kernels status "${KAGGLE_USERNAME}/seekho-sitara-images" > seekho/kaggle/kernel_status.txt 2>&1 || true
+          kaggle kernels output "${KAGGLE_USERNAME}/seekho-sitara-images" -p kout > /dev/null 2>&1 || true
+          ls -R kout > seekho/kaggle/kernel_files.txt 2>&1 || true
+          cat kout/*.log > seekho/kaggle/kernel_log.txt 2>/dev/null || echo "no log" > seekho/kaggle/kernel_log.txt
+          mkdir -p seekho/images_xl && cp kout/out/*.jpg seekho/images_xl/ 2>/dev/null || true
+          git config user.name "seekho-bot"; git config user.email "seekho-bot@users.noreply.github.com"
+          git add seekho/kaggle seekho/images_xl; git commit -m "Kaggle log" || true
+          git pull --rebase origin main; git push
