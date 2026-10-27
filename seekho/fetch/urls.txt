@@ -1,0 +1,4 @@
+demo_problem.webp https://mcp-tools-z-image-turbo.hf.space/--replicas/2kdqx/gradio_api/file=/tmp/gradio/0078884bfe1c60a461394b7ee1ce3c2c146ca0b0de50a02c14f1fc5a2d446acf/image.webp
+demo_trick.webp https://mcp-tools-z-image-turbo.hf.space/--replicas/2kdqx/gradio_api/file=/tmp/gradio/65de9d048bed7455ee23e0d19232aaa4dcb67275104ec7f889cf5b7a87593fd9/image.webp
+demo_result.webp https://mcp-tools-z-image-turbo.hf.space/--replicas/2kdqx/gradio_api/file=/tmp/gradio/ecc2fb2216d2b40d85de90ddbff09ba65f0daf4e563f4af1dde72899fb78fc13/image.webp
+demo_cheer.webp https://mcp-tools-z-image-turbo.hf.space/--replicas/2kdqx/gradio_api/file=/tmp/gradio/c4ff58f76e9d4580be9a34420634556903e40b0015909b9fe8723e51b449c67c/image.webp

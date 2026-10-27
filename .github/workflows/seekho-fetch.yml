@@ -1,0 +1,31 @@
+name: seekho-fetch
+
+on:
+  push:
+    paths:
+      - "seekho/fetch/urls.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download files
+        run: |
+          mkdir -p seekho/fetched
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSL --retry 3 -o "seekho/fetched/$name" "$url" && echo "ok $name $(stat -c%s seekho/fetched/$name)" || echo "FAIL $name"
+          done < seekho/fetch/urls.txt
+      - name: Commit
+        run: |
+          git config user.name "seekho-bot"
+          git config user.email "seekho-bot@users.noreply.github.com"
+          git add seekho/fetched
+          git commit -m "Fetch Seekho assets" || echo "nothing"
+          git pull --rebase origin main
+          git push
