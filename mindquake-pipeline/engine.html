@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mindquake reel</title>
+<style>
+@font-face{font-family:PF;font-weight:700;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-700-normal.woff2)}
+@font-face{font-family:PF;font-weight:900;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-900-normal.woff2)}
+@font-face{font-family:CG;font-weight:600;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff2)}
+@font-face{font-family:CG;font-weight:700;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-700-normal.woff2)}
+@font-face{font-family:CG;font-weight:600;font-style:italic;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-italic.woff2)}
+:root{--paper:#F1E7D0;--ink:#1E1B16;--gold:#B8893A;--red:#7A1F1F;--muted:#6B5F4B}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--paper)}
+#stage{position:relative;width:1080px;height:1920px;background:var(--paper);color:var(--ink);overflow:hidden}
+.abs{position:absolute}
+.center{left:0;right:0;text-align:center}
+.big{font-family:PF;font-weight:900;line-height:1.05;letter-spacing:-1px}
+.cap{font-family:CG;font-weight:700;letter-spacing:10px;color:var(--gold);font-size:34px}
+.ital{font-family:CG;font-style:italic;font-weight:600;color:var(--muted)}
+.w{display:inline-block;will-change:transform,opacity}
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- paper texture + vignette -->
+  <svg class="abs" width="1080" height="1920" style="left:0;top:0" aria-hidden="true">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.28  0 0 0 0 0.18  0 0 0 0.10 0"/></filter>
+    <rect width="1080" height="1920" filter="url(#grain)"/>
+    <radialGradient id="vig" cx="50%" cy="48%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#3a2a10" stop-opacity="0.28"/></radialGradient>
+    <rect width="1080" height="1920" fill="url(#vig)"/>
+  </svg>
+
+  <!-- page frame -->
+  <svg class="abs" width="1080" height="1920" style="left:0;top:0" aria-hidden="true">
+    <rect x="40" y="40" width="1000" height="1840" fill="none" stroke="#1E1B16" stroke-width="5"/>
+    <rect x="56" y="56" width="968" height="1808" fill="none" stroke="#1E1B16" stroke-width="1.5"/>
+    <g fill="#B8893A">
+      <polygon points="56,30 62,50 82,56 62,62 56,82 50,62 30,56 50,50"/>
+      <polygon points="1024,30 1030,50 1050,56 1030,62 1024,82 1018,62 998,56 1018,50"/>
+      <polygon points="56,1838 62,1858 82,1864 62,1870 56,1890 50,1870 30,1864 50,1858"/>
+      <polygon points="1024,1838 1030,1858 1050,1864 1030,1870 1024,1890 1018,1870 998,1864 1018,1858"/>
+    </g>
+  </svg>
+
+  <!-- header -->
+  <div class="abs center" style="top:120px">
+    <div style="display:inline-flex;align-items:center;gap:22px">
+      <div style="width:84px;height:84px;border-radius:50%;background:#1E1B16;border:5px double #B8893A;display:flex;align-items:center;justify-content:center;font-family:PF;font-weight:900;font-size:46px;color:#C49A4A">M</div>
+      <div style="text-align:left">
+        <div style="font-family:PF;font-weight:900;font-size:40px;letter-spacing:6px">MINDQUAKE</div>
+        <div class="cap" style="font-size:24px;letter-spacing:7px">FACT No. <span id="factno">000</span></div>
+      </div>
+    </div>
+    <div style="margin:28px auto 0;width:520px;height:2px;background:#1E1B16"></div>
+  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+    <filter id="fBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+    <filter id="fBlur2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="fGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="gSpace" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E1820"/><stop offset="1" stop-color="#20303C"/></linearGradient>
+    <radialGradient id="gShade" cx="32%" cy="30%" r="80%"><stop offset=".35" stop-color="#000" stop-opacity="0"/><stop offset=".8" stop-color="#05080B" stop-opacity=".55"/><stop offset="1" stop-color="#05080B" stop-opacity=".8"/></radialGradient>
+    <radialGradient id="gSunR" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFD98A" stop-opacity=".9"/><stop offset=".55" stop-color="#F2A541" stop-opacity=".25"/><stop offset="1" stop-color="#F2A541" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gSunBody" cx="42%" cy="40%" r="65%"><stop offset="0" stop-color="#FFF4C2"/><stop offset=".45" stop-color="#FBC85A"/><stop offset=".85" stop-color="#E8892E"/><stop offset="1" stop-color="#C9601E"/></radialGradient>
+    <radialGradient id="gGiant" cx="40%" cy="38%" r="70%"><stop offset="0" stop-color="#F7A27A"/><stop offset=".6" stop-color="#C9512E"/><stop offset="1" stop-color="#7A2414"/></radialGradient>
+    <linearGradient id="gBeam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#CFE8FF" stop-opacity=".85"/><stop offset="1" stop-color="#CFE8FF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="gBeam2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFE8FF" stop-opacity=".85"/><stop offset="1" stop-color="#CFE8FF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="gSubBeam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFF6C8" stop-opacity=".55"/><stop offset="1" stop-color="#FFF6C8" stop-opacity="0"/></linearGradient>
+    <radialGradient id="gNeut" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".3" stop-color="#BFE0FF" stop-opacity=".9"/><stop offset="1" stop-color="#6FA0D8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3F4F57"/><stop offset=".5" stop-color="#66787F"/><stop offset="1" stop-color="#8A9A9F"/></linearGradient>
+    <linearGradient id="gBodyDark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E3436"/><stop offset="1" stop-color="#4E5658"/></linearGradient>
+    <linearGradient id="gBelly" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9D6CB"/><stop offset=".35" stop-color="#F2EEE3"/><stop offset="1" stop-color="#E4DFD2"/></linearGradient>
+    <linearGradient id="gFin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#36444B"/><stop offset="1" stop-color="#5F7178"/></linearGradient>
+    <linearGradient id="gPec" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#55666D"/><stop offset="1" stop-color="#2F3C42"/></linearGradient>
+    <linearGradient id="gWater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8EB2AE"/><stop offset=".45" stop-color="#4E7880"/><stop offset="1" stop-color="#1F3A44"/></linearGradient>
+    <linearGradient id="gDeep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1E3A46"/><stop offset="1" stop-color="#060E14"/></linearGradient>
+    <linearGradient id="gRay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    <linearGradient id="gSand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C7556"/><stop offset="1" stop-color="#4A4634"/></linearGradient>
+    <radialGradient id="gVig" cx="50%" cy="45%" r="70%"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#0B1418" stop-opacity=".45"/></radialGradient>
+    <radialGradient id="gOcto" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#D9765C"/><stop offset=".6" stop-color="#B5523D"/><stop offset="1" stop-color="#7E3426"/></radialGradient>
+    <linearGradient id="gWhale" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3E5664"/><stop offset=".6" stop-color="#6A8290"/><stop offset="1" stop-color="#A9B8BE"/></linearGradient>
+    <radialGradient id="gJelly" cx="50%" cy="20%" r="80%"><stop offset="0" stop-color="#FBE8F2" stop-opacity=".95"/><stop offset="1" stop-color="#D6A2C2" stop-opacity=".55"/></radialGradient>
+    <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFE5C6"/><stop offset="1" stop-color="#DDCDA2"/></linearGradient>
+    <linearGradient id="gStorm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A2F36"/><stop offset="1" stop-color="#5A5E60"/></linearGradient>
+    <linearGradient id="gIceSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9CFDA"/><stop offset="1" stop-color="#E8EFF2"/></linearGradient>
+    <linearGradient id="gMarsSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C98A62"/><stop offset="1" stop-color="#E8B890"/></linearGradient>
+    <radialGradient id="gSun2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF4CF" stop-opacity=".95"/><stop offset="1" stop-color="#FFF4CF" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gGround" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#857A4B"/><stop offset="1" stop-color="#5E5533"/></linearGradient>
+    <linearGradient id="gTrunk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2C1E12"/><stop offset=".4" stop-color="#5E412A"/><stop offset=".6" stop-color="#7B5837"/><stop offset="1" stop-color="#36261A"/></linearGradient>
+    <linearGradient id="gBamboo" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5E7E2E"/><stop offset=".5" stop-color="#A4C25E"/><stop offset="1" stop-color="#5E7E2E"/></linearGradient>
+    <linearGradient id="gPlate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFE4C8"/><stop offset="1" stop-color="#E0D2AE"/></linearGradient>
+    <radialGradient id="gSpot" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF8E4" stop-opacity=".8"/><stop offset="1" stop-color="#FFF8E4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8EEE8" stop-opacity=".55"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".25"/><stop offset="1" stop-color="#C9D2CC" stop-opacity=".55"/></linearGradient>
+    <linearGradient id="gHoney" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2B640"/><stop offset=".6" stop-color="#D88A1E"/><stop offset="1" stop-color="#A85E12"/></linearGradient>
+    <linearGradient id="gBanana" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6DE6A"/><stop offset="1" stop-color="#D8B23A"/></linearGradient>
+    <radialGradient id="gStraw" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#E8584A"/><stop offset="1" stop-color="#9A1E1E"/></radialGradient>
+    <linearGradient id="gMetal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9AA2A6"/><stop offset=".5" stop-color="#D6DCDE"/><stop offset="1" stop-color="#8A9296"/></linearGradient>
+    <linearGradient id="gBeige" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9DFC4"/><stop offset="1" stop-color="#C9BB98"/></linearGradient>
+    <radialGradient id="gCRT" cx="50%" cy="50%" r="70%"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient>
+    <radialGradient id="gHeart" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#D9604E"/><stop offset=".6" stop-color="#A3302A"/><stop offset="1" stop-color="#6A1A16"/></radialGradient>
+    <radialGradient id="gBrain" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#F2C4BC"/><stop offset=".7" stop-color="#DB9C94"/><stop offset="1" stop-color="#B8746C"/></radialGradient>
+    <radialGradient id="gIris" cx="50%" cy="50%" r="50%"><stop offset=".3" stop-color="#5E8A6E"/><stop offset=".8" stop-color="#3E6A54"/><stop offset="1" stop-color="#1E3A2E"/></radialGradient>
+  </defs></svg>
+
+  <div id="hook" class="abs center" style="top:640px;padding:0 70px">
+    <div class="cap" id="hcap" style="margin-bottom:40px">DID YOU KNOW?</div>
+    <div class="big" id="ht"></div>
+    <div class="ital" id="hsub" style="font-size:48px;margin-top:46px"></div>
+  </div>
+  <div id="scenes"></div>
+  <!-- ===== S6 outro ===== -->
+  <div id="outro" class="abs center" style="top:330px">
+    <svg id="emb" width="500" height="500" viewBox="0 0 1080 1080" aria-hidden="true">
+      <defs><path id="mqTop" d="M 120 540 A 420 420 0 0 1 960 540"/><path id="mqBottom" d="M 75 540 A 465 465 0 0 0 1005 540"/></defs>
+      <circle cx="540" cy="540" r="508" fill="#1E1B16"/>
+      <circle cx="540" cy="540" r="494" fill="none" stroke="#C49A4A" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
+      <text font-family="PF" font-weight="900" font-size="66" letter-spacing="20" fill="#C49A4A"><textPath href="#mqTop" startOffset="50%" text-anchor="middle">MINDQUAKE</textPath></text>
+      <text font-family="CG" font-weight="700" font-size="42" letter-spacing="12" fill="#C49A4A"><textPath href="#mqBottom" startOffset="50%" text-anchor="middle">MIND-BLOWING FACTS</textPath></text>
+      <circle cx="540" cy="540" r="392" fill="none" stroke="#C49A4A" stroke-width="5"/>
+      <circle cx="540" cy="540" r="380" fill="#F1E7D0" stroke="#C49A4A" stroke-width="2"/>
+      <g transform="translate(320 236) scale(2.2)">
+        <g fill="#F1E7D0" stroke="#1E1B16" stroke-width="3.2" stroke-linejoin="round">
+          <path d="M94 40 C 78 30, 56 34, 50 54 C 32 57, 24 78, 35 92 C 22 105, 27 128, 45 133 C 45 151, 65 163, 82 155 C 87 162, 92 164, 94 162 Z"/>
+          <path d="M106 40 C 122 30, 144 34, 150 54 C 168 57, 176 78, 165 92 C 178 105, 173 128, 155 133 C 155 151, 135 163, 118 155 C 113 162, 108 164, 106 162 Z"/>
+        </g>
+        <g fill="none" stroke="#1E1B16" stroke-width="2.2" stroke-linecap="round">
+          <path d="M62 64 C 72 58, 84 64, 82 76"/><path d="M44 106 C 56 98, 70 104, 68 116"/><path d="M72 146 C 76 140, 86 140, 88 146"/>
+          <path d="M138 64 C 128 58, 116 64, 118 76"/><path d="M156 106 C 144 98, 130 104, 132 116"/><path d="M128 146 C 124 140, 114 140, 112 146"/>
+        </g>
+        <polygon points="110,22 84,100 100,100 86,180 122,86 104,86 120,22" fill="#7A1F1F" stroke="#1E1B16" stroke-width="2.5" stroke-linejoin="round"/>
+      </g>
+      <rect x="300" y="696" width="480" height="66" fill="#7A1F1F" stroke="#1E1B16" stroke-width="3"/>
+      <text x="540" y="741" text-anchor="middle" font-family="CG" font-weight="700" font-size="34" letter-spacing="10" fill="#F1E7D0">EST. 2026</text>
+    </svg>
+    <div class="big" style="font-size:88px;margin-top:50px">Follow for a new<br>fact every day</div>
+    <div class="cap" style="margin-top:34px;font-size:40px;color:#7A1F1F">@MINDQUAKEFACTS</div>
+    <div id="fwrap" style="position:relative;display:inline-block;margin-top:46px">
+      <div id="fbtn" style="position:relative;width:440px;height:108px;border-radius:16px;background:#7A1F1F;border:4px solid #1E1B16;display:flex;align-items:center;justify-content:center;gap:16px;font-family:PF;font-weight:900;font-size:48px;color:#F1E7D0;letter-spacing:1px">
+        <svg id="fcheck" width="40" height="40" viewBox="0 0 40 40" style="display:none" aria-hidden="true"><path d="M7 21 L16 30 L33 11" fill="none" stroke="#1E1B16" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="ftext">Follow</span>
+        <svg id="ripple" class="abs" style="left:220px;top:54px;overflow:visible" width="1" height="1" aria-hidden="true"><circle id="rip" cx="0" cy="0" r="0" fill="none" stroke="#B8893A" stroke-width="6"/></svg>
+        <div id="burst" class="abs" style="left:220px;top:54px;width:0;height:0"></div>
+      </div>
+      <svg id="hand" class="abs" style="left:58%;top:52%;transform-origin:30% 10%" width="150" height="195" viewBox="0 0 110 135" aria-hidden="true">
+        <path d="M38 60 V14 a9 9 0 0 1 18 0 V52 a8 8 0 0 1 16 2 v4 a8 8 0 0 1 15 4 v6 a7 7 0 0 1 13 4 V96 c0 18 -14 30 -32 30 H50 c-12 0 -20 -6 -26 -16 L8 82 a9 9 0 0 1 14 -10 L38 88 Z" fill="#F1E7D0" stroke="#1E1B16" stroke-width="4" stroke-linejoin="round"/>
+        <g stroke="#1E1B16" stroke-width="2" opacity="0.6"><path d="M56 60 v14"/><path d="M72 64 v12"/><path d="M87 70 v10"/></g>
+      </svg>
+    </div>
+  </div>
+</div>
+<script src="p_core.js"></script><script src="p_sea.js"></script><script src="p_obj.js"></script>
+<script src="engine.js"></script>
+</body></html>

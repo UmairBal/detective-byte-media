@@ -1,0 +1,1960 @@
+[
+ {
+  "id": "002",
+  "hook": "A day on Venus is longer than its *year.*",
+  "hookSub": "And it isn't even close.",
+  "hookVo": "A day on Venus is longer than its year.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ONE SPIN ON ITS AXIS",
+    "num": 243,
+    "unit": "EARTH DAYS",
+    "panel": {
+     "k": "planet",
+     "p": "venus"
+    },
+    "sub": "Venus spins incredibly slowly.",
+    "vo": "Venus takes about two hundred and forty-three Earth days to spin around just once."
+   },
+   {
+    "t": "num",
+    "cap": "ONE TRIP AROUND THE SUN",
+    "num": 225,
+    "unit": "EARTH DAYS",
+    "panel": {
+     "k": "planet",
+     "p": "venus",
+     "orbit": 1
+    },
+    "sub": "Its year ends before its day does.",
+    "vo": "But it circles the Sun in only two hundred and twenty-five. So its year ends... before its day does."
+   }
+  ],
+  "caption": "A day on Venus is longer than its year. 🪐\n\nOne spin takes ~243 Earth days, but one orbit around the Sun takes only ~225.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "003",
+  "hook": "The Sun holds *99.8%* of the Solar System's mass.",
+  "hookSub": "Everything else is crumbs.",
+  "hookVo": "The Sun holds about ninety-nine point eight percent of all the mass in our Solar System.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "THE SUN'S SHARE",
+    "num": 99.8,
+    "unit": "PERCENT OF ALL MASS",
+    "panel": {
+     "k": "sun"
+    },
+    "sub": "Planets, moons, asteroids: the rest.",
+    "vo": "Every planet, moon and asteroid combined makes up just zero point two percent.",
+    "dec": 1,
+    "suffix": "%"
+   },
+   {
+    "t": "big",
+    "big": "Jupiter takes most of what's *left.*",
+    "ital": "Earth is barely a speck.",
+    "panel": {
+     "k": "planet",
+     "p": "jupiter",
+     "compare": "earth"
+    },
+    "vo": "And most of that leftover belongs to Jupiter. Earth is barely a speck."
+   }
+  ],
+  "caption": "The Sun holds about 99.8% of all the mass in our Solar System. ☀️\n\nEvery planet, moon and asteroid together is just ~0.2%, and most of that is Jupiter.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "004",
+  "hook": "A sugar cube of neutron star weighs about a *billion tons.*",
+  "hookSub": "Heavier than a mountain.",
+  "hookVo": "A sugar cube of neutron star material would weigh about a billion tons.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ONE SUGAR CUBE",
+    "num": 1,
+    "unit": "BILLION TONS",
+    "panel": {
+     "k": "neutron"
+    },
+    "sub": "Matter crushed beyond imagination.",
+    "vo": "A neutron star squeezes more mass than our Sun into a ball only about twenty kilometres wide."
+   },
+   {
+    "t": "num",
+    "cap": "FASTEST KNOWN SPIN",
+    "num": 716,
+    "unit": "TIMES PER SECOND",
+    "panel": {
+     "k": "neutron",
+     "fast": 1
+    },
+    "sub": "Faster than a kitchen blender.",
+    "vo": "And the fastest one spins seven hundred and sixteen times every second."
+   }
+  ],
+  "caption": "A sugar-cube-sized piece of a neutron star would weigh about a billion tons. 🌟\n\nThey pack more than the Sun's mass into a ball ~20 km wide, and the fastest spins 716 times a second.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "005",
+  "hook": "Footprints on the Moon could last *millions of years.*",
+  "hookSub": "No wind. No rain.",
+  "hookVo": "The footprints left on the Moon could last for millions of years.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "There's no *wind* on the Moon.",
+    "ital": "Nothing blows the dust away.",
+    "panel": {
+     "k": "planet",
+     "p": "moon"
+    },
+    "vo": "The Moon has no wind and no rain, so nothing wipes the dust away."
+   },
+   {
+    "t": "num",
+    "cap": "FIRST FOOTPRINTS",
+    "num": 1969,
+    "unit": "STILL THERE TODAY",
+    "panel": {
+     "k": "planet",
+     "p": "moon",
+     "compare": "earth"
+    },
+    "sub": "Only tiny meteorites disturb them.",
+    "vo": "So the prints left in nineteen sixty-nine are almost certainly still there today.",
+    "year": 1
+   }
+  ],
+  "caption": "Astronaut footprints on the Moon could last for millions of years. 👣🌕\n\nWith no wind or rain, nothing wipes them away.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "006",
+  "hook": "About *1.3 million* Earths could fit inside the Sun.",
+  "hookSub": "And it's an average star.",
+  "hookVo": "About one point three million Earths could fit inside the Sun.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "FIT INSIDE THE SUN",
+    "num": 1.3,
+    "unit": "MILLION EARTHS",
+    "panel": {
+     "k": "sun",
+     "compare": "earth"
+    },
+    "sub": "Earth is the tiny dot.",
+    "vo": "The Sun is so big that about one point three million Earths could fit inside it.",
+    "dec": 1
+   },
+   {
+    "t": "big",
+    "big": "And it's just an *average* star.",
+    "ital": "Some stars would swallow it whole.",
+    "panel": {
+     "k": "stars",
+     "big": 1
+    },
+    "vo": "And yet, it's only an average star. Some giants out there could swallow it whole."
+   }
+  ],
+  "caption": "About 1.3 million Earths could fit inside the Sun. ☀️🌍\n\nAnd it's only an average-sized star.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "007",
+  "hook": "Saturn would *float* in water.",
+  "hookSub": "If you had a big enough bathtub.",
+  "hookVo": "Saturn would float in water.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "SATURN'S DENSITY",
+    "num": 0.69,
+    "unit": "GRAMS PER CM³",
+    "panel": {
+     "k": "planet",
+     "p": "saturn"
+    },
+    "sub": "Water is 1.0.",
+    "vo": "Saturn is mostly hydrogen and helium, so on average it's less dense than water.",
+    "dec": 2
+   },
+   {
+    "t": "big",
+    "big": "You'd just need a bathtub *bigger than Saturn.*",
+    "ital": "Good luck finding one.",
+    "panel": {
+     "k": "planet",
+     "p": "saturn",
+     "float": 1
+    },
+    "vo": "So in theory it would float. You'd just need a bathtub big enough."
+   }
+  ],
+  "caption": "Saturn would float in water. 🪐🛁\n\nIts average density (~0.69 g/cm³) is lower than water's.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "008",
+  "hook": "The sunlight you see is about *8 minutes* old.",
+  "hookSub": "You're seeing the past.",
+  "hookVo": "The sunlight you see right now is about eight minutes old.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "SUN TO EARTH",
+    "num": 8,
+    "unit": "MINUTES 20 SECONDS",
+    "panel": {
+     "k": "sun",
+     "compare": "earth",
+     "beam": 1
+    },
+    "sub": "Light is fast, but space is huge.",
+    "vo": "Light from the Sun takes about eight minutes and twenty seconds to reach us."
+   },
+   {
+    "t": "big",
+    "big": "If the Sun vanished, you wouldn't *know* for 8 minutes.",
+    "ital": "It would still look like it's shining.",
+    "panel": {
+     "k": "sun"
+    },
+    "vo": "So if the Sun suddenly disappeared, we wouldn't notice for eight whole minutes."
+   }
+  ],
+  "caption": "The sunlight hitting you right now left the Sun about 8 minutes ago. ☀️⏱️",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "009",
+  "hook": "There are more stars than grains of *sand* on Earth's beaches.",
+  "hookSub": "By a long way.",
+  "hookVo": "There are more stars in the universe than grains of sand on every beach on Earth.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Billions of *galaxies.*",
+    "ital": "Each with billions of stars.",
+    "panel": {
+     "k": "stars",
+     "galaxy": 1
+    },
+    "vo": "The observable universe holds billions of galaxies, each with billions of stars."
+   },
+   {
+    "t": "big",
+    "big": "More than every *beach* combined.",
+    "ital": "Scientists' best estimate.",
+    "panel": {
+     "k": "land",
+     "s": "beach"
+    },
+    "vo": "Scientists estimate that's more than every grain of sand on every beach combined."
+   }
+  ],
+  "caption": "There are more stars in the universe than grains of sand on all of Earth's beaches. ✨🏖️",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "010",
+  "hook": "A year on Mercury lasts just *88 days.*",
+  "hookSub": "But its days are wild.",
+  "hookVo": "A year on Mercury lasts just eighty-eight days.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ONE MERCURY YEAR",
+    "num": 88,
+    "unit": "EARTH DAYS",
+    "panel": {
+     "k": "planet",
+     "p": "mercury",
+     "orbit": 1
+    },
+    "sub": "The fastest planet.",
+    "vo": "Mercury races around the Sun in only eighty-eight Earth days."
+   },
+   {
+    "t": "num",
+    "cap": "SUNRISE TO SUNRISE",
+    "num": 176,
+    "unit": "EARTH DAYS",
+    "panel": {
+     "k": "planet",
+     "p": "mercury"
+    },
+    "sub": "Two full Mercury years.",
+    "vo": "But from one sunrise to the next takes a hundred and seventy-six Earth days. Two whole Mercury years."
+   }
+  ],
+  "caption": "A year on Mercury is only 88 Earth days, but one sunrise-to-sunrise day lasts 176. ☿️",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "011",
+  "hook": "Mars has a volcano *2.5 times* taller than Everest.",
+  "hookSub": "Olympus Mons.",
+  "hookVo": "Mars has a volcano about two and a half times taller than Mount Everest.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "OLYMPUS MONS",
+    "num": 22,
+    "unit": "KILOMETRES TALL",
+    "panel": {
+     "k": "land",
+     "s": "mars"
+    },
+    "sub": "Everest is under 9 km.",
+    "vo": "Olympus Mons rises about twenty-two kilometres high."
+   },
+   {
+    "t": "num",
+    "cap": "ITS BASE",
+    "num": 600,
+    "unit": "KILOMETRES WIDE",
+    "panel": {
+     "k": "planet",
+     "p": "mars"
+    },
+    "sub": "The biggest volcano in the Solar System.",
+    "vo": "And its base is around six hundred kilometres wide. The biggest volcano in the Solar System."
+   }
+  ],
+  "caption": "Olympus Mons on Mars is ~22 km tall, about 2.5x Mount Everest. 🌋🔴",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "012",
+  "hook": "Space is completely *silent.*",
+  "hookSub": "Not a single sound.",
+  "hookVo": "Space is completely silent.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Sound needs *air* to travel.",
+    "ital": "Space is almost a perfect vacuum.",
+    "panel": {
+     "k": "stars"
+    },
+    "vo": "Sound travels by making air vibrate, but space is almost completely empty."
+   },
+   {
+    "t": "big",
+    "big": "Explosions in space make *no sound* at all.",
+    "ital": "Sorry, movies.",
+    "panel": {
+     "k": "sun",
+     "flare": 1
+    },
+    "vo": "So even a massive explosion out there would make no sound at all. Sorry, movies."
+   }
+  ],
+  "caption": "Space is completely silent. 🤫🌌\n\nSound needs air (or something) to travel through, and space is nearly a perfect vacuum.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "013",
+  "hook": "Jupiter has a storm *bigger than Earth.*",
+  "hookSub": "And it's been raging for centuries.",
+  "hookVo": "Jupiter has a storm that's bigger than the entire Earth.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "The *Great Red Spot.*",
+    "ital": "Wider than our whole planet.",
+    "panel": {
+     "k": "planet",
+     "p": "jupiter",
+     "compare": "earth"
+    },
+    "vo": "Jupiter's Great Red Spot is a giant storm, wider than the whole Earth."
+   },
+   {
+    "t": "num",
+    "cap": "WIND SPEEDS OVER",
+    "num": 400,
+    "unit": "KM PER HOUR",
+    "panel": {
+     "k": "planet",
+     "p": "jupiter"
+    },
+    "sub": "Watched for over 150 years.",
+    "vo": "Its winds blow faster than four hundred kilometres an hour, and it's been raging for well over a hundred and fifty years.",
+    "suffix": "+"
+   }
+  ],
+  "caption": "Jupiter's Great Red Spot is a storm wider than the entire Earth. 🌪️🪐",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "014",
+  "hook": "When dinosaurs lived, days were *shorter.*",
+  "hookSub": "Earth is slowing down.",
+  "hookVo": "When dinosaurs were alive, a day on Earth was shorter.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "70 MILLION YEARS AGO",
+    "num": 23.5,
+    "unit": "HOURS IN A DAY",
+    "panel": {
+     "k": "planet",
+     "p": "earth"
+    },
+    "sub": "About half an hour shorter.",
+    "vo": "Seventy million years ago, a day lasted only about twenty-three and a half hours.",
+    "dec": 1
+   },
+   {
+    "t": "big",
+    "big": "The *Moon* is slowing us down.",
+    "ital": "Days keep getting a tiny bit longer.",
+    "panel": {
+     "k": "planet",
+     "p": "earth",
+     "compare": "moon"
+    },
+    "vo": "The Moon's pull works like a brake, so our days keep getting slightly longer."
+   }
+  ],
+  "caption": "70 million years ago, a day on Earth lasted only ~23.5 hours. 🦖🌍\n\nThe Moon's tidal pull is slowly slowing our planet's spin.",
+  "tags": "#space #astronomy #facts #mindblowing #didyouknow #science #universe #learnsomethingnew"
+ },
+ {
+  "id": "015",
+  "hook": "An octopus has three *hearts.*",
+  "hookSub": "And blue blood.",
+  "hookVo": "An octopus has three hearts.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ONE OCTOPUS",
+    "num": 3,
+    "unit": "HEARTS",
+    "panel": {
+     "k": "sea",
+     "c": "octopus"
+    },
+    "sub": "Two for the gills, one for the body.",
+    "vo": "Two hearts pump blood to the gills, and the third pumps it around the rest of the body."
+   },
+   {
+    "t": "big",
+    "big": "And its blood is *blue.*",
+    "ital": "Copper, not iron.",
+    "panel": {
+     "k": "sea",
+     "c": "octopus"
+    },
+    "vo": "And its blood is blue, because it uses copper instead of iron to carry oxygen."
+   }
+  ],
+  "caption": "An octopus has three hearts and blue blood. 🐙💙",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "016",
+  "hook": "A blue whale's heart can weigh about *180 kg.*",
+  "hookSub": "The biggest heart on Earth.",
+  "hookVo": "A blue whale's heart can weigh about a hundred and eighty kilograms.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ONE HEART",
+    "num": 180,
+    "unit": "KILOGRAMS",
+    "panel": {
+     "k": "sea",
+     "c": "whale"
+    },
+    "sub": "Heavier than two adults.",
+    "vo": "That's heavier than two grown adults put together."
+   },
+   {
+    "t": "big",
+    "big": "The *largest animal* ever known.",
+    "ital": "Bigger than any dinosaur.",
+    "panel": {
+     "k": "sea",
+     "c": "whale"
+    },
+    "vo": "The blue whale is the largest animal known to have ever lived. Bigger than any dinosaur."
+   }
+  ],
+  "caption": "A blue whale's heart can weigh around 180 kg. 🐋❤️\n\nIt's the largest animal known to have ever lived.",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "017",
+  "hook": "One jellyfish can, in a way, live *forever.*",
+  "hookSub": "Meet Turritopsis dohrnii.",
+  "hookVo": "There's a jellyfish that can, in a way, live forever.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "It turns back into a *baby.*",
+    "ital": "When it's hurt or stressed.",
+    "panel": {
+     "k": "sea",
+     "c": "jelly"
+    },
+    "vo": "When it's hurt or stressed, this tiny jellyfish can turn back into its baby stage..."
+   },
+   {
+    "t": "big",
+    "big": "And starts life *all over again.*",
+    "ital": "Scientists call it biologically immortal.",
+    "panel": {
+     "k": "sea",
+     "c": "jelly"
+    },
+    "vo": "...and start its whole life over again. Scientists call it biologically immortal."
+   }
+  ],
+  "caption": "The 'immortal jellyfish' (Turritopsis dohrnii) can turn back into its baby stage and start life over. 🪼♾️",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "018",
+  "hook": "Over *80%* of the ocean is still unexplored.",
+  "hookSub": "Right here on Earth.",
+  "hookVo": "More than eighty percent of the ocean has never been explored.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "OUR OWN OCEAN",
+    "num": 80,
+    "unit": "PERCENT UNEXPLORED",
+    "panel": {
+     "k": "sea",
+     "c": "deep"
+    },
+    "sub": "Dark, deep and mostly unseen.",
+    "vo": "Most of the deep ocean has never been seen by humans.",
+    "suffix": "%"
+   },
+   {
+    "t": "big",
+    "big": "We have better maps of *Mars.*",
+    "ital": "Than of our own seafloor.",
+    "panel": {
+     "k": "planet",
+     "p": "mars"
+    },
+    "vo": "In fact, we have more detailed maps of Mars than of our own seafloor."
+   }
+  ],
+  "caption": "More than 80% of the ocean remains unexplored. 🌊\n\nWe have better maps of Mars than of our own seafloor.",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "019",
+  "hook": "Sharks don't have a single *bone.*",
+  "hookSub": "Not one.",
+  "hookVo": "Sharks don't have a single bone in their bodies.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Their skeleton is *cartilage.*",
+    "ital": "The same stuff in your nose and ears.",
+    "panel": {
+     "k": "sea",
+     "c": "shark"
+    },
+    "vo": "Their skeleton is made of cartilage, the same flexible stuff in your nose and ears."
+   },
+   {
+    "t": "big",
+    "big": "Lighter and more *flexible.*",
+    "ital": "Perfect for fast turns.",
+    "panel": {
+     "k": "sea",
+     "c": "shark"
+    },
+    "vo": "It's lighter and bendier than bone, which helps them turn fast and save energy."
+   }
+  ],
+  "caption": "Sharks don't have a single bone. 🦈\n\nTheir skeleton is made entirely of cartilage.",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "020",
+  "hook": "Some sharks can live for about *400 years.*",
+  "hookSub": "The Greenland shark.",
+  "hookVo": "Some sharks can live for around four hundred years.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "GREENLAND SHARK",
+    "num": 400,
+    "unit": "YEARS",
+    "panel": {
+     "k": "sea",
+     "c": "deep",
+     "shark": 1
+    },
+    "sub": "The longest-lived vertebrate known.",
+    "vo": "Scientists estimate the Greenland shark can live for around four hundred years."
+   },
+   {
+    "t": "num",
+    "cap": "IT GROWS ABOUT",
+    "num": 1,
+    "unit": "CENTIMETRE A YEAR",
+    "panel": {
+     "k": "sea",
+     "c": "deep",
+     "shark": 1
+    },
+    "sub": "Some alive today may be older than the USA.",
+    "vo": "It grows only about a centimetre a year, so some swimming today may be older than the United States."
+   }
+  ],
+  "caption": "Greenland sharks can live for around 400 years. 🦈⏳",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "021",
+  "hook": "Octopuses can *taste* with their arms.",
+  "hookSub": "Every sucker tastes.",
+  "hookVo": "Octopuses can taste with their arms.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Their suckers *taste* what they touch.",
+    "ital": "Packed with chemical sensors.",
+    "panel": {
+     "k": "sea",
+     "c": "octopus"
+    },
+    "vo": "Their suckers are packed with chemical sensors, so they taste whatever they touch."
+   },
+   {
+    "t": "num",
+    "cap": "NEURONS IN THE ARMS",
+    "num": 66,
+    "unit": "PERCENT",
+    "panel": {
+     "k": "sea",
+     "c": "octopus"
+    },
+    "sub": "Each arm almost thinks for itself.",
+    "vo": "And about two thirds of its neurons are in its arms, so each arm can almost think for itself.",
+    "suffix": "%"
+   }
+  ],
+  "caption": "Octopuses taste with their suckers, and about two-thirds of their neurons are in their arms. 🐙🧠",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "022",
+  "hook": "You can see the Great Barrier Reef from *space.*",
+  "hookSub": "Built by tiny animals.",
+  "hookVo": "You can see the Great Barrier Reef from space.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "GREAT BARRIER REEF",
+    "num": 2300,
+    "unit": "KILOMETRES LONG",
+    "panel": {
+     "k": "sea",
+     "c": "reef"
+    },
+    "sub": "Off the coast of Australia.",
+    "vo": "It stretches for about two thousand three hundred kilometres."
+   },
+   {
+    "t": "big",
+    "big": "Built by *living things.*",
+    "ital": "Tiny coral animals.",
+    "panel": {
+     "k": "sea",
+     "c": "reef"
+    },
+    "vo": "It's the largest structure on Earth built by living things: tiny coral animals."
+   }
+  ],
+  "caption": "The Great Barrier Reef can be seen from space. 🪸🛰️\n\nIt's the largest structure built by living things.",
+  "tags": "#ocean #marinelife #facts #mindblowing #didyouknow #nature #science #learnsomethingnew"
+ },
+ {
+  "id": "023",
+  "hook": "Wombats poop *cubes.*",
+  "hookSub": "Yes, actual cubes.",
+  "hookVo": "Wombats poop cubes.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "CUBES PER NIGHT",
+    "num": 100,
+    "unit": "UP TO",
+    "panel": {
+     "k": "obj",
+     "o": "cubes"
+    },
+    "sub": "The only animal known to do it.",
+    "vo": "Wombats are the only animals known to make cube-shaped poop, up to a hundred cubes a night."
+   },
+   {
+    "t": "big",
+    "big": "Their *intestines* shape them.",
+    "ital": "So they don't roll away.",
+    "panel": {
+     "k": "obj",
+     "o": "cubes"
+    },
+    "vo": "Their intestines have stiff and stretchy sections that mould it into cubes, so it doesn't roll off the rocks where they leave it."
+   }
+  ],
+  "caption": "Wombats poop cubes. 🟫 Yes, really.\n\nTheir intestines shape it, and the cubes don't roll away from the spots they mark.",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "024",
+  "hook": "A tree alive today is nearly *5,000 years old.*",
+  "hookSub": "Older than the pyramids.",
+  "hookVo": "There's a tree alive today that's nearly five thousand years old.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "BRISTLECONE PINE",
+    "num": 4800,
+    "unit": "YEARS OLD",
+    "panel": {
+     "k": "land",
+     "s": "oldtree"
+    },
+    "sub": "Nicknamed Methuselah.",
+    "vo": "A bristlecone pine in California, nicknamed Methuselah, is about four thousand eight hundred years old."
+   },
+   {
+    "t": "big",
+    "big": "Older than the *Great Pyramid.*",
+    "ital": "Of Giza.",
+    "panel": {
+     "k": "land",
+     "s": "desert",
+     "pyramids": 1
+    },
+    "vo": "That makes it older than the Great Pyramid of Giza."
+   }
+  ],
+  "caption": "A bristlecone pine called Methuselah is ~4,800 years old. 🌲\n\nIt's older than the Great Pyramid of Giza.",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "025",
+  "hook": "Earth has more *trees* than the Milky Way has stars.",
+  "hookSub": "Trillions of them.",
+  "hookVo": "Earth has more trees than there are stars in the Milky Way.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "TREES ON EARTH",
+    "num": 3,
+    "unit": "TRILLION",
+    "panel": {
+     "k": "land",
+     "s": "forest"
+    },
+    "sub": "About 3 trillion.",
+    "vo": "There are about three trillion trees on Earth."
+   },
+   {
+    "t": "num",
+    "cap": "STARS IN THE MILKY WAY",
+    "num": 400,
+    "unit": "BILLION, AT MOST",
+    "panel": {
+     "k": "stars",
+     "galaxy": 1
+    },
+    "sub": "Probably between 100 and 400 billion.",
+    "vo": "Our galaxy has somewhere between one hundred and four hundred billion stars."
+   }
+  ],
+  "caption": "Earth has ~3 trillion trees, more than the 100–400 billion stars in the Milky Way. 🌳✨",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "026",
+  "hook": "Some bamboo can grow almost *1 metre* in a day.",
+  "hookSub": "You could almost watch it.",
+  "hookVo": "Some bamboo can grow almost one metre in a single day.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "RECORD GROWTH",
+    "num": 91,
+    "unit": "CM IN ONE DAY",
+    "panel": {
+     "k": "land",
+     "s": "bamboo"
+    },
+    "sub": "The fastest-growing plant.",
+    "vo": "Some species can grow up to ninety-one centimetres in a single day."
+   },
+   {
+    "t": "num",
+    "cap": "THAT'S ABOUT",
+    "num": 4,
+    "unit": "CM EVERY HOUR",
+    "panel": {
+     "k": "land",
+     "s": "bamboo"
+    },
+    "sub": "You could almost watch it grow.",
+    "vo": "That's nearly four centimetres an hour. You could almost watch it grow."
+   }
+  ],
+  "caption": "Some bamboo can grow up to 91 cm in one day. 🎋",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "027",
+  "hook": "Honey never *spoils.*",
+  "hookSub": "Ever.",
+  "hookVo": "Honey never spoils.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Edible honey found in *ancient tombs.*",
+    "ital": "Around 3,000 years old.",
+    "panel": {
+     "k": "obj",
+     "o": "honey"
+    },
+    "vo": "Archaeologists have found honey in ancient Egyptian tombs that was around three thousand years old, and still edible."
+   },
+   {
+    "t": "big",
+    "big": "Germs can't *survive* in it.",
+    "ital": "Too little water, too much acid.",
+    "panel": {
+     "k": "obj",
+     "o": "honey"
+    },
+    "vo": "Honey has so little water and so much acid that bacteria simply can't survive in it."
+   }
+  ],
+  "caption": "Honey never spoils. 🍯\n\nArchaeologists have found ~3,000-year-old honey in Egyptian tombs that was still edible.",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "028",
+  "hook": "Bananas are *berries.* Strawberries aren't.",
+  "hookSub": "Botany is weird.",
+  "hookVo": "Bananas are berries. Strawberries aren't.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "A berry grows from *one flower* with one ovary.",
+    "ital": "Bananas fit perfectly.",
+    "panel": {
+     "k": "obj",
+     "o": "fruit"
+    },
+    "vo": "In botany, a berry grows from a single flower with one ovary, and bananas fit perfectly."
+   },
+   {
+    "t": "big",
+    "big": "Strawberries *don't.*",
+    "ital": "Their seeds are on the outside.",
+    "panel": {
+     "k": "obj",
+     "o": "fruit",
+     "focus": 1
+    },
+    "vo": "Strawberries don't. Their seeds are on the outside, so they're not true berries at all."
+   }
+  ],
+  "caption": "Bananas are berries, but strawberries aren't. 🍌🍓",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "029",
+  "hook": "Lightning is about *5 times* hotter than the Sun's surface.",
+  "hookSub": "In a split second.",
+  "hookVo": "Lightning is about five times hotter than the surface of the Sun.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ONE LIGHTNING BOLT",
+    "num": 30000,
+    "unit": "°C",
+    "panel": {
+     "k": "land",
+     "s": "storm"
+    },
+    "sub": "Hot enough to melt sand into glass.",
+    "vo": "A lightning bolt can heat the air to around thirty thousand degrees Celsius."
+   },
+   {
+    "t": "num",
+    "cap": "THE SUN'S SURFACE",
+    "num": 5500,
+    "unit": "°C",
+    "panel": {
+     "k": "sun"
+    },
+    "sub": "Lightning wins easily.",
+    "vo": "The surface of the Sun is only about five thousand five hundred degrees."
+   }
+  ],
+  "caption": "A lightning bolt can be ~5x hotter than the surface of the Sun. ⚡☀️",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "030",
+  "hook": "Mount Everest is still *growing.*",
+  "hookSub": "Every single year.",
+  "hookVo": "Mount Everest is still growing.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "EVEREST RISES ABOUT",
+    "num": 4,
+    "unit": "MILLIMETRES A YEAR",
+    "panel": {
+     "k": "land",
+     "s": "mountain"
+    },
+    "sub": "Slowly, but surely.",
+    "vo": "Everest grows by roughly four millimetres every year."
+   },
+   {
+    "t": "big",
+    "big": "India is still *pushing* into Asia.",
+    "ital": "Lifting the Himalayas higher.",
+    "panel": {
+     "k": "land",
+     "s": "mountain"
+    },
+    "vo": "That's because India is still pushing into Asia, slowly lifting the Himalayas."
+   }
+  ],
+  "caption": "Mount Everest grows ~4 mm every year. 🏔️\n\nIndia's tectonic plate is still pushing into Asia.",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "031",
+  "hook": "The largest desert on Earth is *Antarctica.*",
+  "hookSub": "Not the Sahara.",
+  "hookVo": "The largest desert on Earth is Antarctica.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "A desert is about *rain*, not heat.",
+    "ital": "Antarctica barely gets any.",
+    "panel": {
+     "k": "land",
+     "s": "ice"
+    },
+    "vo": "A desert is defined by how little rain or snow it gets, not by heat. And Antarctica barely gets any."
+   },
+   {
+    "t": "num",
+    "cap": "ANTARCTICA",
+    "num": 14,
+    "unit": "MILLION KM²",
+    "panel": {
+     "k": "land",
+     "s": "ice"
+    },
+    "sub": "Bigger than the Sahara.",
+    "vo": "At about fourteen million square kilometres, it's bigger than the Sahara."
+   }
+  ],
+  "caption": "The largest desert on Earth is Antarctica. 🧊\n\nDeserts are defined by low precipitation, not heat.",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "032",
+  "hook": "The Sahara used to be *green.*",
+  "hookSub": "With lakes and hippos.",
+  "hookVo": "The Sahara desert used to be green.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Lakes, grass and *hippos.*",
+    "ital": "Around 6,000 to 11,000 years ago.",
+    "panel": {
+     "k": "land",
+     "s": "desert",
+     "green": 1
+    },
+    "vo": "Between about eleven and six thousand years ago, the Sahara had lakes, grasslands and even hippos."
+   },
+   {
+    "t": "big",
+    "big": "Then the *rains* moved away.",
+    "ital": "Earth's slow wobble shifted the monsoons.",
+    "panel": {
+     "k": "land",
+     "s": "desert"
+    },
+    "vo": "Slow changes in Earth's orbit shifted the monsoon rains, and the desert returned."
+   }
+  ],
+  "caption": "The Sahara was green ~6,000–11,000 years ago, with lakes, grassland and hippos. 🌿🐪",
+  "tags": "#nature #earth #facts #mindblowing #didyouknow #science #planet #learnsomethingnew"
+ },
+ {
+  "id": "033",
+  "hook": "Your heart beats about *100,000* times a day.",
+  "hookSub": "Without a break.",
+  "hookVo": "Your heart beats about a hundred thousand times every day.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "EVERY DAY",
+    "num": 100000,
+    "unit": "HEARTBEATS",
+    "panel": {
+     "k": "body",
+     "o": "heart"
+    },
+    "sub": "About 70 beats a minute.",
+    "vo": "At about seventy beats a minute, that's roughly a hundred thousand beats a day."
+   },
+   {
+    "t": "num",
+    "cap": "IN A LIFETIME",
+    "num": 3,
+    "unit": "BILLION BEATS",
+    "panel": {
+     "k": "body",
+     "o": "heart"
+    },
+    "sub": "Without ever taking a break.",
+    "vo": "Over a lifetime, that adds up to around three billion beats, without ever stopping."
+   }
+  ],
+  "caption": "Your heart beats ~100,000 times a day, about 3 billion times in a lifetime. ❤️",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "034",
+  "hook": "Babies have nearly *100 more* bones than adults.",
+  "hookSub": "Where do they go?",
+  "hookVo": "Babies are born with nearly a hundred more bones than adults.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "AT BIRTH",
+    "num": 300,
+    "unit": "BONES",
+    "panel": {
+     "k": "body",
+     "o": "skeleton"
+    },
+    "sub": "Around 270 to 300.",
+    "vo": "A newborn has around three hundred bones."
+   },
+   {
+    "t": "num",
+    "cap": "IN ADULTS",
+    "num": 206,
+    "unit": "BONES",
+    "panel": {
+     "k": "body",
+     "o": "skeleton"
+    },
+    "sub": "Many fuse together as we grow.",
+    "vo": "As we grow, many of them fuse together, leaving two hundred and six."
+   }
+  ],
+  "caption": "Babies have ~300 bones; adults have 206. 🦴\n\nMany fuse together as we grow.",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "035",
+  "hook": "Your brain uses about *20%* of your energy.",
+  "hookSub": "For just 2% of your weight.",
+  "hookVo": "Your brain uses about twenty percent of your body's energy.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ENERGY USED",
+    "num": 20,
+    "unit": "PERCENT",
+    "panel": {
+     "k": "body",
+     "o": "brain"
+    },
+    "sub": "Even while you sleep.",
+    "vo": "Your brain burns about a fifth of your energy, even while you're asleep.",
+    "suffix": "%"
+   },
+   {
+    "t": "num",
+    "cap": "BODY WEIGHT",
+    "num": 2,
+    "unit": "PERCENT",
+    "panel": {
+     "k": "body",
+     "o": "brain"
+    },
+    "sub": "Thinking is expensive.",
+    "vo": "Yet it's only about two percent of your body weight.",
+    "suffix": "%"
+   }
+  ],
+  "caption": "Your brain is ~2% of your body weight but uses ~20% of your energy. 🧠⚡",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "036",
+  "hook": "Your stomach gets a new lining every *few days.*",
+  "hookSub": "Here's why.",
+  "hookVo": "Your stomach replaces its lining every few days.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Its acid is *brutal.*",
+    "ital": "The lining is always under attack.",
+    "panel": {
+     "k": "body",
+     "o": "figure",
+     "glow": "stomach"
+    },
+    "vo": "Your stomach is full of strong acid, so its lining is constantly under attack."
+   },
+   {
+    "t": "num",
+    "cap": "NEW SURFACE CELLS EVERY",
+    "num": 3,
+    "unit": "TO 5 DAYS",
+    "panel": {
+     "k": "body",
+     "o": "figure",
+     "glow": "stomach"
+    },
+    "sub": "Constantly rebuilding itself.",
+    "vo": "To survive, it replaces its surface cells every three to five days."
+   }
+  ],
+  "caption": "Your stomach replaces its surface lining every 3–5 days. 🔁",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "037",
+  "hook": "The DNA in one cell is about *2 metres* long.",
+  "hookSub": "Packed into a tiny space.",
+  "hookVo": "The DNA in just one of your cells is about two metres long.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "IN ONE CELL",
+    "num": 2,
+    "unit": "METRES OF DNA",
+    "panel": {
+     "k": "body",
+     "o": "dna"
+    },
+    "sub": "Coiled up incredibly tightly.",
+    "vo": "Uncoiled, the DNA in a single cell would stretch about two metres."
+   },
+   {
+    "t": "big",
+    "big": "All of it could reach the *Sun* and back.",
+    "ital": "Many times over.",
+    "panel": {
+     "k": "sun",
+     "compare": "earth"
+    },
+    "vo": "And all the DNA in your body could stretch to the Sun and back many times over."
+   }
+  ],
+  "caption": "The DNA in one of your cells is ~2 metres long. 🧬\n\nAll of yours could reach the Sun and back many times.",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "038",
+  "hook": "You're made of about *37 trillion* cells.",
+  "hookSub": "And they keep changing.",
+  "hookVo": "You're made of about thirty-seven trillion cells.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "YOUR BODY",
+    "num": 37,
+    "unit": "TRILLION CELLS",
+    "panel": {
+     "k": "body",
+     "o": "figure"
+    },
+    "sub": "A rough scientific estimate.",
+    "vo": "Scientists estimate the human body has about thirty-seven trillion cells."
+   },
+   {
+    "t": "num",
+    "cap": "REPLACED EVERY SECOND",
+    "num": 3.8,
+    "unit": "MILLION CELLS",
+    "panel": {
+     "k": "body",
+     "o": "dna"
+    },
+    "sub": "You're always rebuilding yourself.",
+    "vo": "And millions of them are replaced every single second.",
+    "dec": 1
+   }
+  ],
+  "caption": "You're made of ~37 trillion cells, and millions are replaced every second. 🔬",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "039",
+  "hook": "Your body actually *glows.*",
+  "hookSub": "Just not enough to see.",
+  "hookVo": "Your body actually glows in the dark.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "A very faint *light.*",
+    "ital": "About 1,000 times too weak to see.",
+    "panel": {
+     "k": "body",
+     "o": "figure",
+     "glow": "all"
+    },
+    "vo": "Scientists in Japan found the human body gives off a faint light, about a thousand times too weak for our eyes."
+   },
+   {
+    "t": "big",
+    "big": "Brightest in the *afternoon.*",
+    "ital": "And strongest around the face.",
+    "panel": {
+     "k": "body",
+     "o": "figure",
+     "glow": "face"
+    },
+    "vo": "It's brightest in the late afternoon, and strongest around the face."
+   }
+  ],
+  "caption": "Your body gives off a faint visible glow, about 1,000x too weak for your eyes to see. ✨🧍",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "040",
+  "hook": "You're slightly *taller* in the morning.",
+  "hookSub": "Gravity is to blame.",
+  "hookVo": "You're slightly taller in the morning.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "WHEN YOU WAKE UP",
+    "num": 1,
+    "unit": "CM TALLER",
+    "panel": {
+     "k": "body",
+     "o": "skeleton"
+    },
+    "sub": "Give or take.",
+    "vo": "Most people are about a centimetre taller right after they wake up.",
+    "prefix": "~"
+   },
+   {
+    "t": "big",
+    "big": "Gravity squeezes your *spine.*",
+    "ital": "The discs recover while you sleep.",
+    "panel": {
+     "k": "body",
+     "o": "skeleton",
+     "spine": 1
+    },
+    "vo": "During the day gravity squeezes the discs in your spine, and they recover while you sleep."
+   }
+  ],
+  "caption": "You're about 1 cm taller in the morning. 📏\n\nGravity compresses your spinal discs during the day.",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "041",
+  "hook": "Your eyes can tell apart about *1 million* colours.",
+  "hookSub": "With just 3 types of cells.",
+  "hookVo": "Your eyes can tell apart about a million different colours.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "THE HUMAN EYE",
+    "num": 1,
+    "unit": "MILLION COLOURS",
+    "panel": {
+     "k": "body",
+     "o": "eye"
+    },
+    "sub": "A rough estimate.",
+    "vo": "The human eye can distinguish around a million different colours."
+   },
+   {
+    "t": "num",
+    "cap": "USING ONLY",
+    "num": 3,
+    "unit": "TYPES OF CONE CELLS",
+    "panel": {
+     "k": "body",
+     "o": "eye"
+    },
+    "sub": "Red, green and blue.",
+    "vo": "And it does that with only three types of colour-sensing cells."
+   }
+  ],
+  "caption": "Your eyes can tell apart ~1 million colours using just 3 types of cone cells. 👁️🌈",
+  "tags": "#humanbody #biology #facts #mindblowing #didyouknow #science #health #learnsomethingnew"
+ },
+ {
+  "id": "042",
+  "hook": "Cleopatra lived closer to the *Moon landing* than to the Great Pyramid.",
+  "hookSub": "Time is strange.",
+  "hookVo": "Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "THE GREAT PYRAMID WAS",
+    "num": 2500,
+    "unit": "YEARS OLD",
+    "panel": {
+     "k": "land",
+     "s": "desert",
+     "pyramids": 1
+    },
+    "sub": "When Cleopatra was born.",
+    "vo": "The Great Pyramid was already about two and a half thousand years old when Cleopatra was born."
+   },
+   {
+    "t": "num",
+    "cap": "THE MOON LANDING CAME",
+    "num": 2000,
+    "unit": "YEARS LATER",
+    "panel": {
+     "k": "planet",
+     "p": "moon",
+     "compare": "earth"
+    },
+    "sub": "Only about 2,000 years after her.",
+    "vo": "The Moon landing came only about two thousand years after her."
+   }
+  ],
+  "caption": "Cleopatra lived closer to the Moon landing than to the building of the Great Pyramid. 🏺🚀",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "043",
+  "hook": "Oxford University is older than the *Aztec Empire.*",
+  "hookSub": "By centuries.",
+  "hookVo": "Oxford University is older than the Aztec Empire.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "TEACHING AT OXFORD",
+    "num": 1096,
+    "unit": "AROUND",
+    "panel": {
+     "k": "obj",
+     "o": "castle"
+    },
+    "sub": "England.",
+    "vo": "Teaching at Oxford began around ten ninety-six.",
+    "year": 1
+   },
+   {
+    "t": "num",
+    "cap": "TENOCHTITLAN FOUNDED",
+    "num": 1325,
+    "unit": "AZTEC CAPITAL",
+    "panel": {
+     "k": "land",
+     "s": "desert",
+     "step": 1
+    },
+    "sub": "Over 200 years later.",
+    "vo": "The Aztec capital, Tenochtitlan, wasn't founded until thirteen twenty-five.",
+    "year": 1
+   }
+  ],
+  "caption": "Oxford University is older than the Aztec Empire. 🏛️",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "044",
+  "hook": "The Great Pyramid was the tallest building for *3,800 years.*",
+  "hookSub": "Nothing came close.",
+  "hookVo": "The Great Pyramid was the tallest building in the world for about three thousand eight hundred years.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "AT THE TOP FOR",
+    "num": 3800,
+    "unit": "YEARS",
+    "panel": {
+     "k": "land",
+     "s": "desert",
+     "pyramids": 1
+    },
+    "sub": "Built around 2560 BC.",
+    "vo": "Built around two thousand five hundred and sixty BC, it stayed the tallest for about three thousand eight hundred years."
+   },
+   {
+    "t": "big",
+    "big": "Finally beaten in *1311.*",
+    "ital": "By England's Lincoln Cathedral.",
+    "panel": {
+     "k": "obj",
+     "o": "castle"
+    },
+    "vo": "It was finally beaten in thirteen eleven, by Lincoln Cathedral in England."
+   }
+  ],
+  "caption": "The Great Pyramid was the world's tallest building for ~3,800 years. 🔺",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "045",
+  "hook": "Mammoths were still alive when the *pyramids* were built.",
+  "hookSub": "Really.",
+  "hookVo": "Woolly mammoths were still alive when the Great Pyramid was built.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "The last mammoths lived on *Wrangel Island.*",
+    "ital": "Until about 4,000 years ago.",
+    "panel": {
+     "k": "land",
+     "s": "ice"
+    },
+    "vo": "The last woolly mammoths survived on Wrangel Island until about four thousand years ago."
+   },
+   {
+    "t": "num",
+    "cap": "GREAT PYRAMID BUILT",
+    "num": 4500,
+    "unit": "YEARS AGO",
+    "panel": {
+     "k": "land",
+     "s": "desert",
+     "pyramids": 1
+    },
+    "sub": "The overlap is real.",
+    "vo": "The Great Pyramid was built about four thousand five hundred years ago."
+   }
+  ],
+  "caption": "Woolly mammoths were still alive when the Great Pyramid was built. 🦣🔺",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "046",
+  "hook": "The shortest war in history lasted under *an hour.*",
+  "hookSub": "38 minutes.",
+  "hookVo": "The shortest war in history lasted less than an hour.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "ANGLO-ZANZIBAR WAR",
+    "num": 38,
+    "unit": "MINUTES",
+    "panel": {
+     "k": "obj",
+     "o": "clock"
+    },
+    "sub": "27 August 1896.",
+    "vo": "In eighteen ninety-six, Britain and Zanzibar fought a war that lasted about thirty-eight minutes."
+   },
+   {
+    "t": "big",
+    "big": "Over before most people *knew* it started.",
+    "ital": "History's shortest war.",
+    "panel": {
+     "k": "obj",
+     "o": "clock"
+    },
+    "vo": "It was over before most people even knew it had started."
+   }
+  ],
+  "caption": "The Anglo-Zanzibar War of 1896 lasted about 38 minutes. ⏱️",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "047",
+  "hook": "Nintendo was founded in *1889.*",
+  "hookSub": "Before cars were common.",
+  "hookVo": "Nintendo was founded in eighteen eighty-nine.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "NINTENDO FOUNDED",
+    "num": 1889,
+    "unit": "KYOTO, JAPAN",
+    "panel": {
+     "k": "obj",
+     "o": "cards"
+    },
+    "sub": "Over 130 years ago.",
+    "vo": "Nintendo started in Kyoto, Japan, in eighteen eighty-nine.",
+    "year": 1
+   },
+   {
+    "t": "big",
+    "big": "It started by making *playing cards.*",
+    "ital": "Video games came almost 90 years later.",
+    "panel": {
+     "k": "obj",
+     "o": "cards"
+    },
+    "vo": "It began by making playing cards. Video games came almost ninety years later."
+   }
+  ],
+  "caption": "Nintendo was founded in 1889, as a playing card company. 🎴",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "048",
+  "hook": "The fax machine was invented before the *telephone.*",
+  "hookSub": "Decades before.",
+  "hookVo": "The fax machine was invented before the telephone.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "FIRST FAX PATENT",
+    "num": 1843,
+    "unit": "ALEXANDER BAIN",
+    "panel": {
+     "k": "obj",
+     "o": "paper",
+     "lines": 1
+    },
+    "sub": "A Scottish inventor.",
+    "vo": "Scottish inventor Alexander Bain patented an early fax machine in eighteen forty-three.",
+    "year": 1
+   },
+   {
+    "t": "num",
+    "cap": "TELEPHONE PATENT",
+    "num": 1876,
+    "unit": "33 YEARS LATER",
+    "panel": {
+     "k": "obj",
+     "o": "phone"
+    },
+    "sub": "Fax came first.",
+    "vo": "The telephone was patented thirty-three years later, in eighteen seventy-six.",
+    "year": 1
+   }
+  ],
+  "caption": "The fax machine (1843) was invented before the telephone (1876). 📠☎️",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "049",
+  "hook": "You can't see the Great Wall of China from *space.*",
+  "hookSub": "It's a myth.",
+  "hookVo": "You can't actually see the Great Wall of China from space with your eyes.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "It's long, but very *narrow.*",
+    "ital": "Just a few metres wide.",
+    "panel": {
+     "k": "obj",
+     "o": "wall"
+    },
+    "vo": "The wall is incredibly long, but only a few metres wide."
+   },
+   {
+    "t": "big",
+    "big": "Astronauts *can't* spot it.",
+    "ital": "Not with the naked eye.",
+    "panel": {
+     "k": "planet",
+     "p": "earth"
+    },
+    "vo": "Astronauts say it's basically impossible to spot with the naked eye from orbit."
+   }
+  ],
+  "caption": "You can't see the Great Wall of China from space with the naked eye. 🧱🛰️",
+  "tags": "#history #facts #mindblowing #didyouknow #ancienthistory #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "050",
+  "hook": "The first computer bug was a real *moth.*",
+  "hookSub": "Taped into a logbook.",
+  "hookVo": "The first computer bug was an actual moth.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "HARVARD MARK II",
+    "num": 1947,
+    "unit": "MOTH FOUND IN A RELAY",
+    "panel": {
+     "k": "obj",
+     "o": "moth"
+    },
+    "sub": "Taped into the logbook.",
+    "vo": "In nineteen forty-seven, engineers found a moth stuck inside the Harvard Mark Two computer.",
+    "year": 1
+   },
+   {
+    "t": "big",
+    "big": "But the word *bug* was much older.",
+    "ital": "Edison used it in the 1870s.",
+    "panel": {
+     "k": "obj",
+     "o": "moth"
+    },
+    "vo": "But the joke worked because engineers already called glitches bugs. Edison used the word in the eighteen seventies."
+   }
+  ],
+  "caption": "The first 'actual case of bug being found' was a moth in 1947, but engineers were already saying 'bug' for decades. 🦋💻",
+  "tags": "#technology #tech #facts #mindblowing #didyouknow #computers #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "051",
+  "hook": "Every good shuffle likely creates an order that's *never existed.*",
+  "hookSub": "Ever.",
+  "hookVo": "Every time you shuffle a deck properly, you probably create an order that has never existed before.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "A DECK HAS",
+    "num": 52,
+    "unit": "CARDS",
+    "panel": {
+     "k": "obj",
+     "o": "cards"
+    },
+    "sub": "Simple, right?",
+    "vo": "A deck has just fifty-two cards."
+   },
+   {
+    "t": "big",
+    "big": "But *8* followed by 67 zeros orders.",
+    "ital": "More than atoms on Earth.",
+    "panel": {
+     "k": "obj",
+     "o": "cards",
+     "fan": 1
+    },
+    "vo": "But they can be arranged in about eight followed by sixty-seven zeros different ways. More than the atoms on Earth."
+   }
+  ],
+  "caption": "A well-shuffled deck is almost certainly in an order that has never existed before. 🃏\n\n52! ≈ 8 × 10^67.",
+  "tags": "#math #numbers #facts #mindblowing #didyouknow #science #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "052",
+  "hook": "There are more possible chess games than *atoms* in the universe.",
+  "hookSub": "Way more.",
+  "hookVo": "There are more possible chess games than atoms in the observable universe.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "About *10¹²⁰* possible games.",
+    "ital": "Claude Shannon's famous estimate.",
+    "panel": {
+     "k": "obj",
+     "o": "chess"
+    },
+    "vo": "Mathematician Claude Shannon estimated around ten to the power of a hundred and twenty possible games."
+   },
+   {
+    "t": "big",
+    "big": "Only about *10⁸⁰* atoms.",
+    "ital": "In the whole observable universe.",
+    "panel": {
+     "k": "stars",
+     "galaxy": 1
+    },
+    "vo": "The whole observable universe has only about ten to the power of eighty atoms."
+   }
+  ],
+  "caption": "There are more possible chess games (~10^120) than atoms in the observable universe (~10^80). ♟️🌌",
+  "tags": "#math #numbers #facts #mindblowing #didyouknow #science #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "053",
+  "hook": "In a room of just *23 people*, two probably share a birthday.",
+  "hookSub": "The birthday paradox.",
+  "hookVo": "In a room of just twenty-three people, it's more likely than not that two share a birthday.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "A ROOM OF",
+    "num": 23,
+    "unit": "PEOPLE",
+    "panel": {
+     "k": "obj",
+     "o": "dots"
+    },
+    "sub": "Sounds too small, right?",
+    "vo": "With just twenty-three people in a room..."
+   },
+   {
+    "t": "num",
+    "cap": "CHANCE OF A SHARED BIRTHDAY",
+    "num": 50,
+    "unit": "PERCENT",
+    "panel": {
+     "k": "obj",
+     "o": "dots",
+     "match": 1
+    },
+    "sub": "With 70 people, it's over 99.9%.",
+    "vo": "...the chance two share a birthday is just over fifty percent. With seventy people, it's over ninety-nine point nine.",
+    "suffix": "%"
+   }
+  ],
+  "caption": "In a room of 23 people, there's a >50% chance two share a birthday. 🎂🎉",
+  "tags": "#math #numbers #facts #mindblowing #didyouknow #science #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "054",
+  "hook": "Fold paper *42 times* and it would reach the Moon.",
+  "hookSub": "In theory.",
+  "hookVo": "In theory, if you folded a sheet of paper forty-two times, it would reach the Moon.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "FOLD IT",
+    "num": 42,
+    "unit": "TIMES",
+    "panel": {
+     "k": "obj",
+     "o": "paper"
+    },
+    "sub": "Each fold doubles the thickness.",
+    "vo": "Each fold doubles its thickness."
+   },
+   {
+    "t": "num",
+    "cap": "IT WOULD BE ABOUT",
+    "num": 440000,
+    "unit": "KILOMETRES THICK",
+    "panel": {
+     "k": "planet",
+     "p": "moon",
+     "compare": "earth"
+    },
+    "sub": "The Moon is 384,400 km away.",
+    "vo": "After forty-two folds, it would be about four hundred and forty thousand kilometres thick. Past the Moon."
+   }
+  ],
+  "caption": "In theory, folding a paper 42 times would make it thick enough to reach the Moon. 📄🌕",
+  "tags": "#math #numbers #facts #mindblowing #didyouknow #science #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "055",
+  "hook": "Zero wasn't always a *number.*",
+  "hookSub": "It had to be invented.",
+  "hookVo": "Zero wasn't always treated as a number.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "BRAHMAGUPTA'S RULES FOR ZERO",
+    "num": 628,
+    "unit": "AD, INDIA",
+    "panel": {
+     "k": "obj",
+     "o": "zero"
+    },
+    "sub": "The first known rules.",
+    "vo": "In six twenty-eight AD, the Indian mathematician Brahmagupta wrote the first known rules for using zero as a number.",
+    "year": 1
+   },
+   {
+    "t": "big",
+    "big": "No zero, no *computers.*",
+    "ital": "Everything digital runs on 0s and 1s.",
+    "panel": {
+     "k": "obj",
+     "o": "computer",
+     "bits": 1
+    },
+    "vo": "Without zero, there'd be no computers. Everything digital runs on zeros and ones."
+   }
+  ],
+  "caption": "Zero wasn't always a number. In 628 AD, Brahmagupta wrote the first known rules for it. 0️⃣",
+  "tags": "#math #numbers #facts #mindblowing #didyouknow #science #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "056",
+  "hook": "The first gigabyte hard drive weighed about *250 kg.*",
+  "hookSub": "And cost a fortune.",
+  "hookVo": "The first gigabyte hard drive weighed about two hundred and fifty kilograms.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "IBM 3380, 1980",
+    "num": 250,
+    "unit": "KILOGRAMS",
+    "panel": {
+     "k": "obj",
+     "o": "hdd"
+    },
+    "sub": "Size of a refrigerator.",
+    "vo": "In nineteen eighty, IBM's first gigabyte-class hard drive weighed about two hundred and fifty kilograms."
+   },
+   {
+    "t": "num",
+    "cap": "IT COST AROUND",
+    "num": 40000,
+    "unit": "DOLLARS",
+    "panel": {
+     "k": "obj",
+     "o": "hdd"
+    },
+    "sub": "Today a tiny card holds far more.",
+    "vo": "And it cost around forty thousand dollars.",
+    "prefix": "$"
+   }
+  ],
+  "caption": "The first gigabyte hard drive (IBM 3380, 1980) weighed ~250 kg and cost ~$40,000. 💾",
+  "tags": "#technology #tech #facts #mindblowing #didyouknow #computers #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "057",
+  "hook": "Your phone has *millions of times* more memory than Apollo 11's computer.",
+  "hookSub": "And it reached the Moon.",
+  "hookVo": "Your phone has millions of times more memory than the computer that took Apollo eleven to the Moon.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "APOLLO GUIDANCE COMPUTER",
+    "num": 4,
+    "unit": "KB OF MEMORY",
+    "panel": {
+     "k": "planet",
+     "p": "moon",
+     "compare": "earth"
+    },
+    "sub": "Roughly 4 kilobytes.",
+    "vo": "The Apollo guidance computer had only about four kilobytes of working memory."
+   },
+   {
+    "t": "big",
+    "big": "Your phone has *millions* of times more.",
+    "ital": "And Apollo still landed on the Moon.",
+    "panel": {
+     "k": "obj",
+     "o": "computer"
+    },
+    "vo": "A modern phone has millions of times more. And that tiny computer still landed humans on the Moon."
+   }
+  ],
+  "caption": "Apollo 11's guidance computer had about 4 KB of memory. Your phone has millions of times more. 🚀📱",
+  "tags": "#technology #tech #facts #mindblowing #didyouknow #computers #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "058",
+  "hook": "The first website ever made is still *online.*",
+  "hookSub": "You can visit it.",
+  "hookVo": "The very first website ever made is still online.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "THE FIRST WEBSITE",
+    "num": 1991,
+    "unit": "CERN",
+    "panel": {
+     "k": "obj",
+     "o": "computer",
+     "web": 1
+    },
+    "sub": "Made by Tim Berners-Lee.",
+    "vo": "Tim Berners-Lee published it at CERN in nineteen ninety-one.",
+    "year": 1
+   },
+   {
+    "t": "big",
+    "big": "*info.cern.ch*",
+    "ital": "You can still visit it today.",
+    "panel": {
+     "k": "obj",
+     "o": "computer",
+     "web": 1
+    },
+    "vo": "And you can still visit it today, at info dot cern dot ch."
+   }
+  ],
+  "caption": "The first website ever made (1991) is still online at info.cern.ch. 🌐",
+  "tags": "#technology #tech #facts #mindblowing #didyouknow #computers #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "059",
+  "hook": "Email is older than the *World Wide Web.*",
+  "hookSub": "By about 20 years.",
+  "hookVo": "Email is older than the World Wide Web.",
+  "scenes": [
+   {
+    "t": "num",
+    "cap": "FIRST NETWORK EMAIL",
+    "num": 1971,
+    "unit": "RAY TOMLINSON",
+    "panel": {
+     "k": "obj",
+     "o": "envelope"
+    },
+    "sub": "He picked the @ sign.",
+    "vo": "Ray Tomlinson sent the first network email in nineteen seventy-one, and picked the at sign.",
+    "year": 1
+   },
+   {
+    "t": "num",
+    "cap": "THE WEB GOES PUBLIC",
+    "num": 1991,
+    "unit": "20 YEARS LATER",
+    "panel": {
+     "k": "obj",
+     "o": "computer",
+     "web": 1
+    },
+    "sub": "Email came first.",
+    "vo": "The World Wide Web only went public twenty years later, in nineteen ninety-one.",
+    "year": 1
+   }
+  ],
+  "caption": "Email (1971) is about 20 years older than the World Wide Web (1991). 📧",
+  "tags": "#technology #tech #facts #mindblowing #didyouknow #computers #learnsomethingnew #funfacts"
+ },
+ {
+  "id": "060",
+  "hook": "Wi-Fi doesn't actually stand for *anything.*",
+  "hookSub": "Surprise.",
+  "hookVo": "Wi-Fi doesn't actually stand for anything.",
+  "scenes": [
+   {
+    "t": "big",
+    "big": "Not *Wireless Fidelity.*",
+    "ital": "That's a myth.",
+    "panel": {
+     "k": "obj",
+     "o": "wifi"
+    },
+    "vo": "It's not short for wireless fidelity. That's a myth."
+   },
+   {
+    "t": "big",
+    "big": "Just a *catchy name.*",
+    "ital": "Picked by a branding company in 1999.",
+    "panel": {
+     "k": "obj",
+     "o": "wifi"
+    },
+    "vo": "It was simply a catchy name picked by a branding company in nineteen ninety-nine."
+   }
+  ],
+  "caption": "Wi-Fi doesn't stand for 'Wireless Fidelity', or anything at all. 📶",
+  "tags": "#technology #tech #facts #mindblowing #didyouknow #computers #learnsomethingnew #funfacts"
+ }
+]
