@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mindquake reel 001</title>
+<style>
+@font-face{font-family:PF;font-weight:700;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-700-normal.woff2)}
+@font-face{font-family:PF;font-weight:900;src:url(node_modules/@fontsource/playfair-display/files/playfair-display-latin-900-normal.woff2)}
+@font-face{font-family:CG;font-weight:600;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-normal.woff2)}
+@font-face{font-family:CG;font-weight:700;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-700-normal.woff2)}
+@font-face{font-family:CG;font-weight:600;font-style:italic;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-600-italic.woff2)}
+:root{--paper:#F1E7D0;--ink:#1E1B16;--gold:#B8893A;--red:#7A1F1F;--muted:#6B5F4B}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--paper)}
+#stage{position:relative;width:1080px;height:1920px;background:var(--paper);color:var(--ink);overflow:hidden}
+.abs{position:absolute}
+.center{left:0;right:0;text-align:center}
+.big{font-family:PF;font-weight:900;line-height:1.05;letter-spacing:-1px}
+.cap{font-family:CG;font-weight:700;letter-spacing:10px;color:var(--gold);font-size:34px}
+.ital{font-family:CG;font-style:italic;font-weight:600;color:var(--muted)}
+.w{display:inline-block;will-change:transform,opacity}
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- paper texture + vignette -->
+  <svg class="abs" width="1080" height="1920" style="left:0;top:0" aria-hidden="true">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.28  0 0 0 0 0.18  0 0 0 0.10 0"/></filter>
+    <rect width="1080" height="1920" filter="url(#grain)"/>
+    <radialGradient id="vig" cx="50%" cy="48%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#3a2a10" stop-opacity="0.28"/></radialGradient>
+    <rect width="1080" height="1920" fill="url(#vig)"/>
+  </svg>
+
+  <!-- page frame -->
+  <svg class="abs" width="1080" height="1920" style="left:0;top:0" aria-hidden="true">
+    <rect x="40" y="40" width="1000" height="1840" fill="none" stroke="#1E1B16" stroke-width="5"/>
+    <rect x="56" y="56" width="968" height="1808" fill="none" stroke="#1E1B16" stroke-width="1.5"/>
+    <g fill="#B8893A">
+      <polygon points="56,30 62,50 82,56 62,62 56,82 50,62 30,56 50,50"/>
+      <polygon points="1024,30 1030,50 1050,56 1030,62 1024,82 1018,62 998,56 1018,50"/>
+      <polygon points="56,1838 62,1858 82,1864 62,1870 56,1890 50,1870 30,1864 50,1858"/>
+      <polygon points="1024,1838 1030,1858 1050,1864 1030,1870 1024,1890 1018,1870 998,1864 1018,1858"/>
+    </g>
+  </svg>
+
+  <!-- header -->
+  <div class="abs center" style="top:120px">
+    <div style="display:inline-flex;align-items:center;gap:22px">
+      <div style="width:84px;height:84px;border-radius:50%;background:#1E1B16;border:5px double #B8893A;display:flex;align-items:center;justify-content:center;font-family:PF;font-weight:900;font-size:46px;color:#C49A4A">M</div>
+      <div style="text-align:left">
+        <div style="font-family:PF;font-weight:900;font-size:40px;letter-spacing:6px">MINDQUAKE</div>
+        <div class="cap" style="font-size:24px;letter-spacing:7px">FACT No. 001</div>
+      </div>
+    </div>
+    <div style="margin:28px auto 0;width:520px;height:2px;background:#1E1B16"></div>
+  </div>
+
+  <!-- ===== S1 hook ===== -->
+  <div id="s1" class="abs center" style="top:700px">
+    <div class="cap" id="s1cap" style="margin-bottom:40px">DID YOU KNOW?</div>
+    <div class="big" style="font-size:150px" id="s1t">
+      <span class="w">Sharks</span><br><span class="w">are</span> <span class="w">older</span><br><span class="w">than</span> <span class="w" style="color:#7A1F1F">trees.</span>
+    </div>
+    <div class="ital" id="s1sub" style="font-size:48px;margin-top:50px">Yes, really. Here's the proof.</div>
+  </div>
+
+  <!-- shared gradients -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3F4F57"/><stop offset=".5" stop-color="#66787F"/><stop offset="1" stop-color="#8A9A9F"/></linearGradient>
+      <linearGradient id="gBelly" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9D6CB"/><stop offset=".35" stop-color="#F2EEE3"/><stop offset="1" stop-color="#E4DFD2"/></linearGradient>
+      <linearGradient id="gFin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#36444B"/><stop offset="1" stop-color="#5F7178"/></linearGradient>
+      <linearGradient id="gPec" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#55666D"/><stop offset="1" stop-color="#2F3C42"/></linearGradient>
+      <linearGradient id="gWater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8EB2AE"/><stop offset=".45" stop-color="#4E7880"/><stop offset="1" stop-color="#1F3A44"/></linearGradient>
+      <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFE5C6"/><stop offset="1" stop-color="#DDCDA2"/></linearGradient>
+      <linearGradient id="gGround" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#857A4B"/><stop offset="1" stop-color="#5E5533"/></linearGradient>
+      <linearGradient id="gTrunk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2C1E12"/><stop offset=".4" stop-color="#5E412A"/><stop offset=".6" stop-color="#7B5837"/><stop offset="1" stop-color="#36261A"/></linearGradient>
+      <linearGradient id="gSand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C7556"/><stop offset="1" stop-color="#4A4634"/></linearGradient>
+      <radialGradient id="gVig" cx="50%" cy="45%" r="70%"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#0B1418" stop-opacity=".45"/></radialGradient>
+      <radialGradient id="gSun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFF4CF" stop-opacity=".95"/><stop offset="1" stop-color="#FFF4CF" stop-opacity="0"/></radialGradient>
+      <linearGradient id="gRay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ===== S2 shark ===== -->
+  <div id="s2" class="abs center" style="top:380px">
+    <div class="cap">THE FIRST SHARKS</div>
+    <div class="big" style="font-size:240px;margin-top:6px;line-height:1"><span id="n2">0</span></div>
+    <div class="cap" style="color:#1E1B16;letter-spacing:12px;font-size:40px;margin-top:30px">MILLION YEARS AGO</div>
+    <svg id="sea2" class="abs" style="left:90px;top:440px" width="900" height="560" viewBox="0 0 900 560" aria-hidden="true"></svg>
+    <div class="ital abs center" id="s2sub" style="top:1030px;font-size:50px;padding:0 120px">Ancient sharks were already hunting in the oceans.</div>
+  </div>
+
+  <!-- ===== S3 tree ===== -->
+  <div id="s3" class="abs center" style="top:380px">
+    <div class="cap">THE FIRST TREES</div>
+    <div class="big" style="font-size:240px;margin-top:6px;line-height:1"><span id="n3">0</span></div>
+    <div class="cap" style="color:#1E1B16;letter-spacing:12px;font-size:40px;margin-top:30px">MILLION YEARS AGO</div>
+    <svg id="land3" class="abs" style="left:90px;top:440px" width="900" height="560" viewBox="0 0 900 560" aria-hidden="true"></svg>
+    <div class="ital abs center" id="s3sub" style="top:1030px;font-size:50px;padding:0 120px">Trees showed up about 65 million years later.</div>
+  </div>
+
+  <!-- ===== S4 compare ===== -->
+  <div id="s4" class="abs center" style="top:380px">
+    <div class="big" style="font-size:112px;padding:0 90px">For <span style="color:#7A1F1F">65 million</span> years</div>
+    <div class="ital" style="font-size:54px;margin-top:24px;padding:0 120px">sharks ruled the seas, while the land had nothing taller than moss.</div>
+    <svg id="both4" class="abs" style="left:90px;top:500px" width="900" height="560" viewBox="0 0 900 560" aria-hidden="true"></svg>
+  </div>
+
+  <!-- ===== S5 extinctions ===== -->
+  <div id="s5" class="abs center" style="top:380px">
+    <div class="big" style="font-size:104px;padding:0 90px">They survived <span style="color:#7A1F1F">all 5</span> mass extinctions</div>
+    <div id="stamps" style="margin-top:70px;display:flex;flex-direction:column;align-items:center;gap:26px"></div>
+  </div>
+
+  <!-- ===== S6 outro ===== -->
+  <div id="s6" class="abs center" style="top:330px">
+    <svg id="emb" width="500" height="500" viewBox="0 0 1080 1080" aria-hidden="true">
+      <defs><path id="mqTop" d="M 120 540 A 420 420 0 0 1 960 540"/><path id="mqBottom" d="M 75 540 A 465 465 0 0 0 1005 540"/></defs>
+      <circle cx="540" cy="540" r="508" fill="#1E1B16"/>
+      <circle cx="540" cy="540" r="494" fill="none" stroke="#C49A4A" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
+      <text font-family="PF" font-weight="900" font-size="66" letter-spacing="20" fill="#C49A4A"><textPath href="#mqTop" startOffset="50%" text-anchor="middle">MINDQUAKE</textPath></text>
+      <text font-family="CG" font-weight="700" font-size="42" letter-spacing="12" fill="#C49A4A"><textPath href="#mqBottom" startOffset="50%" text-anchor="middle">MIND-BLOWING FACTS</textPath></text>
+      <circle cx="540" cy="540" r="392" fill="none" stroke="#C49A4A" stroke-width="5"/>
+      <circle cx="540" cy="540" r="380" fill="#F1E7D0" stroke="#C49A4A" stroke-width="2"/>
+      <g transform="translate(320 236) scale(2.2)">
+        <g fill="#F1E7D0" stroke="#1E1B16" stroke-width="3.2" stroke-linejoin="round">
+          <path d="M94 40 C 78 30, 56 34, 50 54 C 32 57, 24 78, 35 92 C 22 105, 27 128, 45 133 C 45 151, 65 163, 82 155 C 87 162, 92 164, 94 162 Z"/>
+          <path d="M106 40 C 122 30, 144 34, 150 54 C 168 57, 176 78, 165 92 C 178 105, 173 128, 155 133 C 155 151, 135 163, 118 155 C 113 162, 108 164, 106 162 Z"/>
+        </g>
+        <g fill="none" stroke="#1E1B16" stroke-width="2.2" stroke-linecap="round">
+          <path d="M62 64 C 72 58, 84 64, 82 76"/><path d="M44 106 C 56 98, 70 104, 68 116"/><path d="M72 146 C 76 140, 86 140, 88 146"/>
+          <path d="M138 64 C 128 58, 116 64, 118 76"/><path d="M156 106 C 144 98, 130 104, 132 116"/><path d="M128 146 C 124 140, 114 140, 112 146"/>
+        </g>
+        <polygon points="110,22 84,100 100,100 86,180 122,86 104,86 120,22" fill="#7A1F1F" stroke="#1E1B16" stroke-width="2.5" stroke-linejoin="round"/>
+      </g>
+      <rect x="300" y="696" width="480" height="66" fill="#7A1F1F" stroke="#1E1B16" stroke-width="3"/>
+      <text x="540" y="741" text-anchor="middle" font-family="CG" font-weight="700" font-size="34" letter-spacing="10" fill="#F1E7D0">EST. 2026</text>
+    </svg>
+    <div class="big" style="font-size:88px;margin-top:50px">Follow for a new<br>fact every day</div>
+    <div class="cap" style="margin-top:34px;font-size:40px;color:#7A1F1F">@MINDQUAKEFACTS</div>
+    <div id="fwrap" style="position:relative;display:inline-block;margin-top:46px">
+      <div id="fbtn" style="position:relative;width:440px;height:108px;border-radius:16px;background:#7A1F1F;border:4px solid #1E1B16;display:flex;align-items:center;justify-content:center;gap:16px;font-family:PF;font-weight:900;font-size:48px;color:#F1E7D0;letter-spacing:1px">
+        <svg id="fcheck" width="40" height="40" viewBox="0 0 40 40" style="display:none" aria-hidden="true"><path d="M7 21 L16 30 L33 11" fill="none" stroke="#1E1B16" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="ftext">Follow</span>
+        <svg id="ripple" class="abs" style="left:220px;top:54px;overflow:visible" width="1" height="1" aria-hidden="true"><circle id="rip" cx="0" cy="0" r="0" fill="none" stroke="#B8893A" stroke-width="6"/></svg>
+        <div id="burst" class="abs" style="left:220px;top:54px;width:0;height:0"></div>
+      </div>
+      <svg id="hand" class="abs" style="left:58%;top:52%;transform-origin:30% 10%" width="150" height="195" viewBox="0 0 110 135" aria-hidden="true">
+        <path d="M38 60 V14 a9 9 0 0 1 18 0 V52 a8 8 0 0 1 16 2 v4 a8 8 0 0 1 15 4 v6 a7 7 0 0 1 13 4 V96 c0 18 -14 30 -32 30 H50 c-12 0 -20 -6 -26 -16 L8 82 a9 9 0 0 1 14 -10 L38 88 Z" fill="#F1E7D0" stroke="#1E1B16" stroke-width="4" stroke-linejoin="round"/>
+        <g stroke="#1E1B16" stroke-width="2" opacity="0.6"><path d="M56 60 v14"/><path d="M72 64 v12"/><path d="M87 70 v10"/></g>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const inOut=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const $=id=>document.getElementById(id);
+// scene windows [start,end]
+const S={s1:[0,4.4],s2:[4.4,11.2],s3:[11.2,17.9],s4:[17.9,24.8],s5:[24.8,31.4],s6:[31.4,37.4]};
+const FADE=0.45;
+function sceneAlpha(id,t){const[a,b]=S[id];if(t<a||t>b)return 0;return Math.min(ease((t-a)/FADE),id==='s6'?1:ease((b-t)/FADE));}
+function rise(el,p,dy=40){el.style.opacity=ease(p);el.style.transform=`translateY(${(1-ease(p))*dy}px)`;}
+
+// stamps
+const names=[['ORDOVICIAN','445 million years ago'],['DEVONIAN','372 million years ago'],['PERMIAN','252 million years ago'],['TRIASSIC','201 million years ago'],['CRETACEOUS','66 million years ago']];
+$('stamps').innerHTML=names.map((n,i)=>`<div id="st${i}" style="display:flex;align-items:center;gap:26px;width:760px;padding:16px 30px;border:3px solid #1E1B16;background:#EADDBE"><div style="width:58px;height:58px;border-radius:50%;border:4px solid #7A1F1F;display:flex;align-items:center;justify-content:center;font-family:PF;font-weight:900;font-size:34px;color:#7A1F1F;flex-shrink:0">✓</div><div style="text-align:left"><div style="font-family:PF;font-weight:900;font-size:40px;letter-spacing:3px">${n[0]}</div><div class="ital" style="font-size:32px">${n[1]}</div></div></div>`).join('');
+
+// ---------- illustration builders ----------
+function rnd(seed){let s=seed;return()=>{s=(s*16807)%2147483647;return (s-1)/2147483646;};}
+const BODY="M120 100 C 200 80, 260 62, 340 60 C 430 58, 510 70, 560 92 C 580 100, 592 106, 594 112 C 590 120, 572 126, 540 134 C 480 150, 400 162, 330 158 C 260 154, 200 140, 150 124 C 136 120, 126 118, 120 116 Z";
+function sharkSVG(p){return `
+<g id="${p}">
+ <clipPath id="${p}c"><path d="${BODY}"/></clipPath>
+ <g id="${p}T"><path d="M 132 99 C 100 80, 62 46, 20 16 C 38 50, 58 84, 82 106 C 62 128, 50 150, 44 178 C 74 152, 104 130, 134 118 Z" fill="url(#gFin)" stroke="#232D31" stroke-width="1.6" stroke-linejoin="round"/>
+   <path d="M 40 40 C 60 66, 74 86, 90 104" fill="none" stroke="#7E9096" stroke-width="1.4" opacity=".6"/></g>
+ <path d="M 168 96 C 172 88, 176 82, 180 78 C 182 86, 186 92, 194 96 Z" fill="url(#gFin)" stroke="#232D31" stroke-width="1.4"/>
+ <path d="M 178 130 C 172 138, 166 146, 162 152 C 172 148, 182 142, 196 136 Z" fill="url(#gFin)" stroke="#232D31" stroke-width="1.4"/>
+ <path d="M 236 146 C 226 156, 216 166, 208 172 C 224 168, 240 160, 258 152 Z" fill="url(#gFin)" stroke="#232D31" stroke-width="1.4"/>
+ <path d="${BODY}" fill="url(#gBody)"/>
+ <g clip-path="url(#${p}c)">
+  <path d="M 600 114 C 570 116, 548 113, 520 118 C 492 123, 470 118, 440 124 C 410 130, 380 124, 350 130 C 310 137, 280 128, 245 133 C 210 137, 180 126, 150 123 C 138 122, 128 120, 110 118 L 110 200 L 600 200 Z" fill="url(#gBelly)"/>
+  <path d="M 140 98 C 220 76, 300 64, 380 64 C 450 64, 520 74, 570 98" fill="none" stroke="#FFFFFF" stroke-width="5" opacity=".14"/>
+  <path d="M 150 112 C 260 104, 380 100, 520 104" fill="none" stroke="#2C383D" stroke-width="1.2" opacity=".35"/>
+ </g>
+ <path d="${BODY}" fill="none" stroke="#232D31" stroke-width="1.8" stroke-linejoin="round"/>
+ <path d="M 296 64 C 316 38, 330 16, 344 4 C 344 26, 352 46, 388 61 C 360 58, 326 59, 296 64 Z" fill="url(#gFin)" stroke="#232D31" stroke-width="1.6" stroke-linejoin="round"/>
+ <path d="M 312 56 C 324 40, 334 24, 342 12" fill="none" stroke="#8193999" stroke-width="1.2" opacity=".5"/>
+ <g fill="none" stroke="#2F3B40" stroke-width="2" stroke-linecap="round"><path d="M 452 90 q 7 18 2 38"/><path d="M 464 89 q 7 18 2 38"/><path d="M 476 88 q 7 18 2 37"/><path d="M 488 88 q 6 17 2 35"/><path d="M 499 88 q 6 16 2 32"/></g>
+ <path d="M 446 132 C 420 160, 392 186, 356 210 C 384 200, 420 178, 468 140 Z" fill="url(#gPec)" stroke="#232D31" stroke-width="1.6" stroke-linejoin="round"/>
+ <path d="M 520 132 C 545 128, 566 124, 584 118" fill="none" stroke="#2B2B2B" stroke-width="2.2" stroke-linecap="round"/>
+ <g stroke="#FFFFFF" stroke-width="1.6" opacity=".8"><path d="M 532 131 l 2 4"/><path d="M 544 129 l 2 4"/><path d="M 556 127 l 2 4"/><path d="M 568 124 l 2 4"/></g>
+ <ellipse cx="572" cy="104" rx="4" ry="2" fill="#2A3236"/>
+ <circle cx="534" cy="99" r="6" fill="#0E1214"/><circle cx="536" cy="97" r="1.8" fill="#FFFFFF" opacity=".9"/>
+</g>`;}
+function waterBits(r,W,H,top,n){let s='';for(let i=0;i<n;i++){s+=`<circle class="pt" data-x="${r()*W}" data-y="${top+r()*(H-top)}" data-s="${0.3+r()*0.9}" r="${1+r()*2.4}" fill="#E8F2EE" opacity="${0.2+r()*0.35}"/>`;}return s;}
+function seaweed(r,n,base,x0,x1){let s='';for(let i=0;i<n;i++){const x=x0+r()*(x1-x0),h=60+r()*90;s+=`<path class="wd" data-x="${x}" data-b="${base}" data-h="${h}" data-p="${r()*6}" fill="none" stroke="${r()<.5?'#3C5A36':'#4E6E3E'}" stroke-width="${6+r()*5}" stroke-linecap="round"/>`;}return s;}
+function fishSchool(r,n){let s='';for(let i=0;i<n;i++){s+=`<path class="fs" data-x="${r()*900}" data-y="${110+r()*200}" data-v="${18+r()*14}" d="M0 0 C 8 -6, 18 -6, 24 0 C 18 6, 8 6, 0 0 Z M0 0 L -8 -6 L -8 6 Z" fill="#17303A" opacity=".35"/>`;}return s;}
+function frame(W,H){return `<rect x="2" y="2" width="${W-4}" height="${H-4}" rx="18" fill="none" stroke="#1E1B16" stroke-width="5"/><rect x="12" y="12" width="${W-24}" height="${H-24}" rx="12" fill="none" stroke="#B8893A" stroke-width="1.6" opacity=".9"/>`;}
+function rays(n,W){let s='';for(let i=0;i<n;i++){const x=80+i*(W-160)/(n-1);s+=`<polygon class="ray" data-x="${x}" points="${x-20},0 ${x+20},0 ${x+90},560 ${x-60},560" fill="url(#gRay)"/>`;}return s;}
+
+// sea scene
+(()=>{const r=rnd(11);$('sea2').innerHTML=`
+<clipPath id="c2"><rect x="0" y="0" width="900" height="560" rx="18"/></clipPath>
+<g clip-path="url(#c2)">
+ <rect width="900" height="560" fill="url(#gWater)"/>
+ <g id="ray2">${rays(5,900)}</g>
+ <g id="caus2" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".18"></g>
+ <g>${fishSchool(r,9)}</g>
+ <path d="M0 470 C 120 450, 220 486, 340 468 C 470 448, 560 482, 700 462 C 790 450, 850 470, 900 462 L 900 560 L 0 560 Z" fill="url(#gSand)"/>
+ <g fill="#3F3D30" stroke="#2A291F" stroke-width="2"><path d="M80 500 C 90 470, 140 466, 160 490 C 150 510, 100 512, 80 500 Z"/><path d="M640 492 C 660 462, 720 460, 740 486 C 730 504, 670 508, 640 492 Z"/><path d="M380 510 C 390 494, 420 492, 432 506 Z"/></g>
+ ${seaweed(r,9,500,30,880)}
+ <g id="shk2">${sharkSVG('sk2')}</g>
+ ${waterBits(r,900,560,0,40)}
+ <rect width="900" height="560" fill="url(#gVig)"/>
+</g>${frame(900,560)}`;})();
+
+// tree scene
+const CL=[[340,238,62],[562,204,66],[382,168,56],[520,152,58],[330,312,56],[580,294,58],[450,112,72],[452,192,66],[400,244,52],[506,244,54],[452,268,46]];
+(()=>{const r=rnd(29);let fol='';CL.forEach((c,i)=>{const[x,y,R]=c;let g=`<circle cx="${x+8}" cy="${y+10}" r="${R}" fill="#344C25"/>`;
+ for(let k=0;k<6;k++){const a=k/6*Math.PI*2+r();g+=`<circle cx="${x+Math.cos(a)*R*0.45}" cy="${y+Math.sin(a)*R*0.4}" r="${R*0.55}" fill="#557334"/>`;}
+ for(let k=0;k<3;k++){g+=`<circle cx="${x-R*0.35+r()*R*0.4}" cy="${y-R*0.4+r()*R*0.3}" r="${R*(0.22+r()*0.12)}" fill="#7E9C46"/>`;}
+ for(let k=0;k<5;k++){g+=`<circle cx="${x-R*0.6+r()*R*0.9}" cy="${y-R*0.6+r()*R*0.8}" r="${2+r()*3}" fill="#A8C266" opacity=".8"/>`;}
+ for(let k=0;k<6;k++){g+=`<circle cx="${x-R*0.5+r()*R}" cy="${y+r()*R*0.7}" r="${2+r()*3}" fill="#2A3D1E" opacity=".6"/>`;}
+ fol+=`<g class="cl" style="transform-origin:${x}px ${y+R*0.6}px">${g}</g>`;});
+ let tufts='';for(let i=0;i<34;i++){const x=20+r()*860,y=505+r()*40,h=10+r()*14;tufts+=`<path d="M${x} ${y} l -4 ${-h} M${x} ${y} l 1 ${-h*1.2} M${x} ${y} l 5 ${-h*0.9}" stroke="${r()<.5?'#55642E':'#6F7D3A'}" stroke-width="2.2" stroke-linecap="round"/>`;}
+ $('land3').innerHTML=`
+<clipPath id="c3"><rect x="0" y="0" width="900" height="560" rx="18"/></clipPath>
+<clipPath id="trunkClip"><rect id="tcr" x="380" y="508" width="140" height="0"/></clipPath>
+<g clip-path="url(#c3)">
+ <rect width="900" height="560" fill="url(#gSky)"/>
+ <circle cx="730" cy="120" r="120" fill="url(#gSun)"/><circle cx="730" cy="120" r="44" fill="#F6E8B6" opacity=".9"/>
+ <g id="birds3" fill="none" stroke="#3A3428" stroke-width="2.4" stroke-linecap="round"><path class="bd" data-x="120" data-y="90" /><path class="bd" data-x="170" data-y="70"/><path class="bd" data-x="200" data-y="104"/></g>
+ <path d="M0 400 C 120 340, 220 360, 320 330 C 430 300, 520 350, 640 320 C 740 296, 830 330, 900 316 L 900 560 L 0 560 Z" fill="#BDB28A" opacity=".85"/>
+ <path d="M0 440 C 140 400, 260 430, 380 410 C 520 386, 640 430, 780 404 C 840 394, 880 402, 900 400 L 900 560 L 0 560 Z" fill="#A0956A"/>
+ <path d="M0 492 C 200 480, 380 500, 560 488 C 700 480, 820 494, 900 488 L 900 560 L 0 560 Z" fill="url(#gGround)"/>
+ <ellipse id="tshadow" cx="455" cy="508" rx="170" ry="14" fill="#2A2416" opacity=".28"/>
+ <g id="treeAll">
+  <g clip-path="url(#trunkClip)">
+   <path d="M 404 510 C 424 502, 434 474, 436 432 C 440 360, 442 300, 444 200 L 458 200 C 460 300, 462 360, 466 432 C 468 474, 478 502, 500 510 Z" fill="url(#gTrunk)" stroke="#22170D" stroke-width="2"/>
+   <g fill="none" stroke="#24180E" stroke-width="1.6" opacity=".55"><path d="M444 500 C 442 440, 446 380, 446 300"/><path d="M454 496 C 456 430, 452 370, 454 290"/><path d="M438 470 C 436 440, 440 410, 440 380"/><path d="M462 470 C 464 444, 460 410, 460 380"/></g>
+  </g>
+  <g fill="none" stroke="#4A3320" stroke-linecap="round">
+   <path class="br" d="M446 380 C 400 360, 370 345, 330 318" stroke-width="10"/><path class="br" d="M456 370 C 500 350, 530 338, 578 296" stroke-width="10"/>
+   <path class="br" d="M446 330 C 410 300, 380 280, 342 240" stroke-width="9"/><path class="br" d="M452 300 C 490 270, 520 250, 560 206" stroke-width="9"/>
+   <path class="br" d="M448 250 C 420 220, 400 200, 382 170" stroke-width="7"/><path class="br" d="M452 240 C 480 215, 500 195, 520 156" stroke-width="7"/>
+   <path class="br" d="M450 210 C 450 180, 452 150, 450 116" stroke-width="8"/>
+  </g>
+  <g id="fol3">${fol}</g>
+ </g>
+ <g>${tufts}</g>
+</g>${frame(900,560)}`;})();
+
+// land + sea scene
+(()=>{const r=rnd(47);let moss='';for(let i=0;i<26;i++){const x=20+r()*860,y=196+r()*14;moss+=`<ellipse cx="${x}" cy="${y}" rx="${6+r()*10}" ry="${3+r()*4}" fill="${r()<.5?'#5F7438':'#7A8E45'}" stroke="#3A4422" stroke-width="1"/>`;}
+ $('both4').innerHTML=`
+<clipPath id="c4"><rect x="0" y="0" width="900" height="560" rx="18"/></clipPath>
+<g clip-path="url(#c4)">
+ <rect width="900" height="240" fill="url(#gSky)"/>
+ <path d="M0 160 C 90 120, 160 140, 230 110 C 300 80, 360 130, 440 104 C 520 80, 600 126, 690 100 C 780 76, 850 110, 900 100 L 900 240 L 0 240 Z" fill="#A99D78"/>
+ <path d="M0 190 C 150 176, 300 196, 450 184 C 600 172, 760 194, 900 182 L 900 240 L 0 240 Z" fill="url(#gGround)"/>
+ <g fill="#6A6248" stroke="#3E3A2A" stroke-width="1.5"><path d="M120 196 C 128 180, 156 180, 164 196 Z"/><path d="M560 194 C 570 176, 604 176, 612 194 Z"/><path d="M760 198 C 766 188, 786 188, 792 198 Z"/></g>
+ ${moss}
+ <text x="450" y="60" text-anchor="middle" font-family="CG" font-weight="700" font-size="30" letter-spacing="8" fill="#1E1B16">LAND · NO TREES YET</text>
+ <path id="surf4" fill="url(#gWater)"/>
+ <g id="ray4">${rays(4,900)}</g>
+ <g id="shk4far" opacity=".45">${sharkSVG('sk4b')}</g>
+ <g id="shk4">${sharkSVG('sk4')}</g>
+ ${waterBits(r,900,560,250,26)}
+ <text x="450" y="528" text-anchor="middle" font-family="CG" font-weight="700" font-size="30" letter-spacing="8" fill="#F1E7D0">SEA · SHARKS</text>
+ <rect width="900" height="560" fill="url(#gVig)" opacity=".7"/>
+</g>${frame(900,560)}`;})();
+
+const brs=[...document.querySelectorAll('#land3 .br')];brs.forEach(p=>{const L=p.getTotalLength();p.dataset.len=L;p.style.strokeDasharray=L;});
+function animShark(p,t,amp=12,f=6.5){const T=$(p+'T');T.setAttribute('transform',`rotate(${Math.sin(t*f)*amp} 132 108)`);}
+function animWater(svgId,t,surfY){
+ document.querySelectorAll(`#${svgId} .pt`).forEach(c=>{const x=+c.dataset.x,y=+c.dataset.y,s=+c.dataset.s;let yy=y-t*14*s;const top=surfY||0;const span=560-top;yy=top+((yy-top)%span+span)%span;c.setAttribute('cx',x+Math.sin(t*0.8*s+x)*6);c.setAttribute('cy',yy);});
+ document.querySelectorAll(`#${svgId} .ray`).forEach((p,i)=>{p.setAttribute('transform',`rotate(${Math.sin(t*0.5+i*1.3)*3} ${p.dataset.x} 0)`);p.style.opacity=0.6+0.4*Math.sin(t*0.9+i*2);});
+ document.querySelectorAll(`#${svgId} .wd`).forEach(p=>{const x=+p.dataset.x,b=+p.dataset.b,h=+p.dataset.h,ph=+p.dataset.p;const sw=Math.sin(t*1.6+ph)*14;p.setAttribute('d',`M${x} ${b} Q ${x+14+sw*0.4} ${b-h*0.25} ${x+sw*0.7} ${b-h*0.5} T ${x+sw*1.6} ${b-h}`);});
+ document.querySelectorAll(`#${svgId} .fs`).forEach(p=>{const x=((+p.dataset.x+t*(+p.dataset.v))%1000)-50;p.setAttribute('transform',`translate(${x} ${+p.dataset.y+Math.sin(t*2+x*0.02)*3}) scale(1.2)`);});
+}
+
+function render(t){
+  for(const id in S){const a=sceneAlpha(id,t);$(id).style.opacity=a;$(id).style.visibility=a>0?'visible':'hidden';}
+  // S1
+  const l1=t-S.s1[0];
+  rise($('s1cap'),l1/0.5);
+  [...document.querySelectorAll('#s1t .w')].forEach((w,i)=>{const p=(l1-0.35-i*0.28)/0.4;w.style.opacity=ease(p);w.style.transform=`translateY(${(1-ease(p))*50}px) scale(${1+(1-ease(p))*0.15})`;});
+  rise($('s1sub'),(l1-2.5)/0.6);
+  // S2
+  const l2=t-S.s2[0];
+  $('n2').textContent=Math.round(450*inOut(l2/1.6));
+  animWater('sea2',l2);
+  { let c='';for(let k=0;k<4;k++){let d=`M0 ${30+k*26}`;for(let x=0;x<=900;x+=30){d+=` L${x} ${30+k*26+Math.sin(x*0.02+l2*1.5+k)*6}`;}c+=`<path d="${d}"/>`;} $('caus2').innerHTML=c; }
+  { const x=-600+(l2/6.8)*1560, y=200+Math.sin(l2*1.3)*16; $('shk2').setAttribute('transform',`translate(${x} ${y}) rotate(${Math.sin(l2*1.3+1.2)*-2} 300 110) scale(0.95)`); animShark('sk2',l2); }
+  rise($('s2sub'),(l2-1.6)/0.6);
+  // S3
+  const l3=t-S.s3[0];
+  $('n3').textContent=Math.round(385*inOut(l3/1.6));
+  { const g=inOut((l3-0.3)/1.1); const h=g*320; $('tcr').setAttribute('y',508-h); $('tcr').setAttribute('height',h);
+    brs.forEach((p,i)=>{const gg=inOut((l3-1.0-i*0.1)/0.8);p.style.strokeDashoffset=p.dataset.len*(1-gg);});
+    document.querySelectorAll('#fol3 .cl').forEach((c,i)=>{const q=clamp((l3-1.6-i*0.09)/0.45);const sc=q<=0?0:1+Math.sin(q*Math.PI)*0.12*(1-q)+ (ease(q)-1);c.style.transform=`scale(${Math.max(0,sc)})`;});
+    $('fol3').setAttribute('transform',`rotate(${Math.sin(l3*1.1)*0.9} 452 300)`);
+    $('tshadow').setAttribute('rx',40+130*ease((l3-1.4)/1.2));
+    document.querySelectorAll('#birds3 .bd').forEach((b,i)=>{const x=+b.dataset.x+l3*38,y=+b.dataset.y+Math.sin(l3*2+i)*4,w=Math.sin(l3*9+i*2)*5;b.setAttribute('d',`M${x-12} ${y-4+w} Q ${x-6} ${y-8+w} ${x} ${y} Q ${x+6} ${y-8+w} ${x+12} ${y-4+w}`);}); }
+  rise($('s3sub'),(l3-2.4)/0.6);
+  // S4
+  const l4=t-S.s4[0];
+  { let d='M0 236';for(let x=0;x<=900;x+=20){d+=` L${x} ${236+Math.sin(x*0.025+l4*2.2)*5+Math.sin(x*0.07-l4*3)*2}`;}d+=' L900 560 L0 560 Z';$('surf4').setAttribute('d',d);
+    animWater('both4',l4,250);
+    $('shk4').setAttribute('transform',`translate(${-330+(l4/6.9)*1260} ${330+Math.sin(l4*1.4)*10}) scale(0.55)`); animShark('sk4',l4);
+    $('shk4far').setAttribute('transform',`translate(${920-(l4/6.9)*700} ${290+Math.sin(l4*1.1)*6}) scale(-0.3 0.3)`); animShark('sk4b',l4,10,7); }
+  // S5
+  const l5=t-S.s5[0];
+  names.forEach((n,i)=>{const p=(l5-1.0-i*0.75)/0.25;const el=$('st'+i);el.style.opacity=clamp(p*2);el.style.transform=`scale(${1+(1-ease(p))*0.6}) rotate(${(1-ease(p))*-4}deg)`;});
+  // S6
+  const l6=t-S.s6[0];
+  $('emb').style.transform=`scale(${0.8+0.2*ease(l6/0.8)}) rotate(${(1-ease(l6/0.8))*-12}deg)`;
+  // follow animation
+  const fw=$('fwrap'); fw.style.opacity=ease((l6-0.9)/0.5); fw.style.transform=`translateY(${(1-ease((l6-0.9)/0.5))*40}px)`;
+  const TAP=2.45, pin=ease((l6-1.5)/0.75), pout=ease((l6-3.4)/0.6);
+  let hs=1; if(l6>TAP-0.15&&l6<TAP+0.2){hs=1-0.14*Math.sin(Math.PI*(l6-(TAP-0.15))/0.35);}
+  const h=$('hand'); h.style.opacity=l6<1.5?0:1-pout;
+  h.style.transform=`translate(${(1-pin)*420}px,${(1-pin)*520+pout*560}px) rotate(${(1-pin)*-18}deg) scale(${hs})`;
+  const done=l6>=TAP, b=$('fbtn');
+  b.style.background=done?'#F1E7D0':'#7A1F1F'; b.style.color=done?'#1E1B16':'#F1E7D0';
+  $('ftext').textContent=done?'Following':'Follow'; $('fcheck').style.display=done?'block':'none';
+  const bt=l6-TAP; b.style.transform=done?`scale(${1+0.09*Math.exp(-bt*6)*Math.sin(bt*18)})`:(l6>TAP-0.15?'scale(0.96)':'scale(1)');
+  const rp=clamp((l6-TAP)/0.6); $('rip').setAttribute('r',rp*320); $('rip').style.opacity=rp>0&&rp<1?1-rp:0;
+  [...document.querySelectorAll('#burst .bs')].forEach((e,i)=>{const a=i/8*Math.PI*2;const q=clamp((l6-TAP)/0.7);const d=150+q*170;e.style.opacity=q>0&&q<1?1-q:0;e.style.transform=`translate(${Math.cos(a)*d*1.5-14}px,${Math.sin(a)*d*0.7-14}px) scale(${0.6+q*0.6}) rotate(${q*90}deg)`;});
+}
+$('burst').innerHTML=Array.from({length:8},()=>'<svg class="bs abs" width="28" height="28" viewBox="0 0 28 28" style="left:0;top:0" aria-hidden="true"><polygon points="14,0 17.5,10.5 28,14 17.5,17.5 14,28 10.5,17.5 0,14 10.5,10.5" fill="#B8893A"/></svg>').join('');
+window.render=render;window.DURATION=37.4;
+window.STAMP_TIMES=names.map((n,i)=>S.s5[0]+1.0+i*0.75);
+render(0);
+</script>
+</body>
+</html>
